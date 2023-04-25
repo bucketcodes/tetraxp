@@ -43,7 +43,7 @@ const ArtPage = () => {
             style={{ maxWidth: "80vw", maxHeight: "100vh" }} // changed values here
           >
             <GatsbyImage
-            style={{ maxHeight: "80vh"}} //Test
+            style={{ maxHeight: "80vh"}}
   image={getImage(selectedImage.childImageSharp)}
   alt=""
   layout="constrained"
