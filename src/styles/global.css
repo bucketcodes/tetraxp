@@ -3,5 +3,69 @@
 @tailwind utilities;
 
 html, body {
-    @apply bg-black text-gray-400;
+    @apply text-gray-400;
+    background-color: rgb(13, 13, 15);
+}
+
+.my-image-button:hover .gatsby-image-wrapper {
+    filter: brightness(0.7);
+  }
+
+  .my-image-button .gatsby-image-wrapper {
+    transition: filter 0.2s ease-in-out;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  .modal {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: rgb(94, 94, 94);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-style: initial;
+    text-decoration: none;
+  }
+  
+  .nav-container ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #111111;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
 }

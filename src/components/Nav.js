@@ -1,44 +1,29 @@
 import React from "react";
-import { Link, StaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+import logo from '/src/images/logo.png';
 
-export default function Nav({ siteTitle, menuLinks }) {
+export default function Nav({ menuLinks }) {
   return (
-    <div className="flex flex-col w-full items-center my-8">
+    <div className="my-8 nav-container">
       <div className="font-bold">
-        <StaticQuery
-          query={graphql`
-            query {
-              file(name: { eq: "logo" }) {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 200
-                    placeholder: TRACED_SVG
-                    formats: [AUTO, WEBP]
-                  )
-                }
-              }
-            }
-          `}
-          render={(data) => (
-            <div className="flex flex-wrap w-full items-center justify-center gap-16">
-              {data.file && (
-                <div className="w-auto">
+            <div className="flex flex-wrap w-full items-center justify-center">
+                <div className="w-auto logo">
                   <Link to="/">
-                    <GatsbyImage image={getImage(data.file.childImageSharp)} />
+                    <img src={logo} alt="Logo" width="80" />
                   </Link>
                 </div>
-              )}
             </div>
-          )}
-        />
       </div>
       <ul className="flex">
-        {menuLinks.map(({ name, link }) => (
-          <li key={name} className="mr-4 last:mr-0 hover:text-gray-100">
-            <Link activeClassName="text-gray-100" to={link}>
+        {menuLinks.map(({ name, link, external=false }) => (
+          <li key={name} className="mr-6 last:mr-0 hover:text-gray-100">
+            {external ? (
+              <a href={link} target="_blank" rel="noreferrer">{name}</a>
+            ) : (
+              <Link activeClassName="text-gray-100" to={link}>
               {name}
             </Link>
+            )}
           </li>
         ))}
       </ul>

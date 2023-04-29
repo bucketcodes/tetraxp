@@ -1,33 +1,37 @@
 import * as React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import artImages from "../artImages.json";
 import Masonry from "react-masonry-css";
+import prand from "pure-rand";
 
 const breakpointColumnsObj = {
   default: 6,
-  1200: 4,
-  992: 3,
-  768: 2,
-  576: 1,
+  1536: 5,
+  1280: 4,
+  1024: 4,
+  768: 4,
+  640: 4,
 };
+
 
 const ArtPage = () => {
   const [selectedImage, setSelectedImage] = React.useState(null);
 
   const openModal = (image) => {
     setSelectedImage(image);
+    document.body.classList.add("modal-open");
   };
 
   const closeModal = () => {
     setSelectedImage(null);
+    document.body.classList.remove("modal-open");
   };
 
   return (
     <div>
       {selectedImage && (
         <div
-          className="fixed top-0 left-0 z-50 w-full bg-black bg-opacity-75 flex justify-center items-center"
+          className="fixed top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
           onClick={closeModal}
           onKeyDown={(e) => {
             if (e.key === "Escape") {
@@ -40,49 +44,69 @@ const ArtPage = () => {
         >
           <div
             className="max-w-full w-full h-screen flex justify-center items-center"
-            style={{ maxWidth: "80vw", maxHeight: "100vh" }} // changed values here
+            style={{ maxWidth: "90vw", maxHeight: "100vh" }}
           >
             <GatsbyImage
-            style={{ maxHeight: "80vh"}}
-  image={getImage(selectedImage.childImageSharp)}
-  alt=""
-  layout="constrained"
-  objectFit="contain"
-  aspectRatio={selectedImage.childImageSharp.gatsbyImageData.aspectRatio}
-/>
-
+              style={{ maxHeight: "90vh" }}
+              image={getImage(selectedImage.childImageSharp)}
+              alt=""
+              layout="constrained"
+              objectFit="contain"
+              aspectRatio={
+                selectedImage.childImageSharp.gatsbyImageData.aspectRatio
+              }
+            />
+            {selectedImage && (
+              <div
+                className="fixed top-0 left-0 w-full bg-black text-white text-center py-2"
+                style={{ zIndex: "1", position: "fixed" }}
+              >
+                <p className="text-lg font-bold">
+                  {selectedImage.relativePath.split("/").pop().split(".")[0].toUpperCase()}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       )}
+
       <StaticQuery
         query={graphql`
-          query {
-            allFile(filter: { relativePath: { regex: "/art/" } }) {
-              edges {
-                node {
-                  childImageSharp {
-                    gatsbyImageData(
-                      placeholder: TRACED_SVG
-                      formats: [AUTO, WEBP]
-                    )
-                  }
-                  relativePath
+        query {
+          allFile(
+            filter: { relativePath: { regex: "/art/" } }
+            sort: { fields: [birthTime], order: DESC }
+          ) {
+            edges {
+              node {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: DOMINANT_COLOR
+                    formats: [AUTO, WEBP]
+                    quality: 70
+                    breakpoints: [576, 768, 992, 1200]
+                  )
                 }
+                relativePath
               }
             }
           }
+        }
         `}
-        render={(data) => (
+        
+        render={(data) => {
+          const shuffledEdges = shuffleArray([...data.allFile.edges]);
+          return(
           <Masonry
             breakpointCols={breakpointColumnsObj}
-            className="flex w-full"
-            columnClassName="my-masonry-grid_column gap-8"
+            className="flex pr-2 pl-2 md:pr-4 md:pl-4"
+            columnClassName="grid_column gap-8"
           >
-            {data.allFile.edges.map(({ node }, index) => (
+            {shuffledEdges.map(({ node }, index) => (
               <div
                 key={index}
-                className="my-masonry-grid px-2"
-                style={{ marginBottom: "8px" }}
+                className="grid"
+                style={{ marginBottom: "4px", marginLeft: "2px", marginRight: "2px" }}
               >
                 <button
                   type="button"
@@ -98,20 +122,28 @@ const ArtPage = () => {
                     className="text-gray-500"
                     style={{ display: "none", marginBottom: "8px" }}
                   >
-                    {artImages
-                      .find((aI) => aI.file === node.relativePath)
-                      ?.name.toUpperCase()}
+                    {node.relativePath.split("/").pop().split(".")[0].toUpperCase()}
                   </p>
                 </button>
               </div>
             ))}
           </Masonry>
-        )}
+        )}}
       />
     </div>
   );
 };
 
+const shuffleArray = (arr)=> {
+  const seed = 32425245212
+  const rng = prand.mersenne(seed)
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = prand.unsafeUniformIntDistribution(0,i,rng);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 export default ArtPage;
 
-export const Head = () => <title>Art Page</title>;
+export const Head = () => <title>Art</title>;

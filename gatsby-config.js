@@ -1,26 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Tetra XP`,
+    title: `TETRA`,
     siteUrl: `https://www.tetraxp.com`,
     menuLinks: [
       {
-        name: "Art",
+        name: "ART",
         link: "/art",
       },
       {
-        name: "NFT",
-        link: "/nft",
+        name: "NFT", 
+        link: "https://foundation.app/tetra",
+        external: true,
       },
       {
-        name: "Music",
+        name: "MUSIC",
         link: "/music",
       },
       {
-        name: "Shop",
+        name: "SHOP",
         link: "/shop",
       },
       {
-        name: "Contact",
+        name: "CONTACT",
         link: "/contact",
       },
     ],
@@ -29,6 +30,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
