@@ -3,6 +3,8 @@ import Nav from "./Nav";
 import "../styles/global.css";
 import React from "react";
 
+
+
 const Layout = ({ children }) => {
   return (
     <StaticQuery

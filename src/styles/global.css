@@ -14,7 +14,7 @@ html, body {
   .my-image-button .gatsby-image-wrapper {
     transition: filter 0.2s ease-in-out;
   }
-  
+
   button:focus {
     outline: none;
   }
@@ -22,7 +22,23 @@ html, body {
   .modal {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    overflow: hidden;
   }
+
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
   .nav-container {
     display: flex;
     flex-direction: column;
@@ -37,7 +53,7 @@ html, body {
     font-style: initial;
     text-decoration: none;
   }
-  
+
   .nav-container ul li a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -69,3 +85,4 @@ html, body {
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
 }
+

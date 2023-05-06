@@ -27,7 +27,6 @@ module.exports = {
     ],
   },
   plugins: [
-    "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
@@ -35,6 +34,17 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require('postcss-import'),
+          require('tailwindcss'),
+          require('autoprefixer'),
+          require('postcss-focus-visible')
+        ],
       },
     },
     "gatsby-plugin-sharp",

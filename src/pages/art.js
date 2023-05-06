@@ -31,7 +31,7 @@ const ArtPage = () => {
     <div>
       {selectedImage && (
         <div
-          className="fixed top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
+          className="modal-container top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
           onClick={closeModal}
           onKeyDown={(e) => {
             if (e.key === "Escape") {
@@ -73,10 +73,7 @@ const ArtPage = () => {
       <StaticQuery
         query={graphql`
         query {
-          allFile(
-            filter: { relativePath: { regex: "/art/" } }
-            sort: { fields: [birthTime], order: DESC }
-          ) {
+          allFile(filter: { relativePath: { regex: "/art/"}}, sort: {birthTime: DESC}) {
             edges {
               node {
                 childImageSharp {
@@ -135,7 +132,7 @@ const ArtPage = () => {
 };
 
 const shuffleArray = (arr)=> {
-  const seed = 32425245212
+  const seed = 3242524521252
   const rng = prand.mersenne(seed)
   for (let i = arr.length - 1; i > 0; i--) {
     const j = prand.unsafeUniformIntDistribution(0,i,rng);
