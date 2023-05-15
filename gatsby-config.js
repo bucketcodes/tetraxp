@@ -9,8 +9,9 @@ module.exports = {
       },
       {
         name: "NFT", 
-        link: "https://foundation.app/tetra",
-        external: true,
+        link: "/nft",
+        //link: "https://foundation.app/tetra",
+        //external: true,
       },
       {
         name: "MUSIC",

@@ -4,6 +4,7 @@ import logo from '/src/images/logo.png';
 
 export default function Nav({ menuLinks }) {
   return (
+    
     <div className="my-8 nav-container">
       <div className="font-bold">
             <div className="flex flex-wrap w-full items-center justify-center">

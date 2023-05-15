@@ -1,4 +1,3 @@
-
 require('dotenv').config({ path: "./process.env" });
 
 const express = require('express');
@@ -9,6 +8,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const PORT = process.env.WEBSITE_PORT || 3001;
 
+let submissionCount = 0;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,17 +25,27 @@ const smtpConfig = {
   },
   tls: {
     rejectUnauthorized: false,
-    ciphers: 'TLSv1.2', // Use TLS version 1.2
-    secureProtocol: 'TLSv1_2_method'
+    /*ciphers: 'TLSv1.2', // Use TLS version 1.2
+    secureProtocol: 'TLSv1_2_method'*/
   }};
 
 const transporter = nodemailer.createTransport(smtpConfig);
 
+// Enable CORS for all routes
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 app.post('/contact', async (req, res) => {
-  const { email, message } = req.body;
-  
+  const { name, email, phone, message } = req.body;
+
   console.log('Received request to /contact endpoint');
+  console.log('Name:', name);
   console.log('Email:', email);
+  console.log('Phone:', phone);
   console.log('Message:', message);
 
   if (!email || !message) {
@@ -43,13 +53,18 @@ app.post('/contact', async (req, res) => {
     return res.status(400).json({ error: 'Please provide both email and message.' });
   }
 
-
-
   const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: email,
-    subject: 'New Contact Form Submission',
-    text: `Message: ${message}`
+    from: 'contact@tetraxp.com',
+    to: process.env.EMAIL_USER,
+    subject: `Contact Form Submission #${++submissionCount}`,
+    html: `
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Message:</strong></p>
+      <pre></pre>
+      <p>${message}</p>
+    `
   };
 
   try {
@@ -64,6 +79,14 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+const https = require('https');
+const fs = require('fs');
+
+const options = {
+  key: fs.readFileSync('certs/ca.key'),
+  cert: fs.readFileSync('certs/ca.crt')
+};
+
+https.createServer(options, app).listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

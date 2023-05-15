@@ -2,6 +2,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Nav from "./Nav";
 import "../styles/global.css";
 import React from "react";
+//import Background from "./Background";
 
 
 
@@ -16,7 +17,6 @@ const Layout = ({ children }) => {
               menuLinks {
                 name
                 link
-                external
               }
             }
           }
@@ -28,7 +28,9 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             menuLinks={data.site.siteMetadata.menuLinks}
           />
-          <main className="px-4 w-full">{children}</main>
+          <main className="px-4 w-full" style={{ zIndex: "1" }}>
+            {children}
+          </main>
         </>
       )}
     />
