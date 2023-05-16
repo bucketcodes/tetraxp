@@ -1,12 +1,18 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faPause, faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlay,
+  faPause,
+  faForward,
+  faBackward,
+} from "@fortawesome/free-solid-svg-icons";
 
-const PlayerControls = ({ isPlaying, onPlayPauseClick, onPrevClick, onNextClick }) => {
-  const handlePlayPauseClick = useCallback((play) => {
-    onPlayPauseClick(play);
-  }, [onPlayPauseClick]);
-
+const PlayerControls = ({
+  isPlaying,
+  onPlayPauseClick,
+  onPrevClick,
+  onNextClick,
+}) => {
   return (
     <div className="audio-controls text-4xl text-neutral-600 transition-colors duration-200">
       <button
@@ -21,7 +27,7 @@ const PlayerControls = ({ isPlaying, onPlayPauseClick, onPrevClick, onNextClick 
         <button
           type="button"
           className="pause hover:text-white mr-8 transition-colors duration-200"
-          onClick={() => handlePlayPauseClick(false)}
+          onClick={() => onPlayPauseClick(false)} // Change this
           aria-label="Pause"
         >
           <FontAwesomeIcon icon={faPause} />
@@ -30,7 +36,7 @@ const PlayerControls = ({ isPlaying, onPlayPauseClick, onPrevClick, onNextClick 
         <button
           type="button"
           className="play hover:text-white mr-8 transition-colors duration-200"
-          onClick={() => handlePlayPauseClick(true)}
+          onClick={() => onPlayPauseClick(true)} // Change this
           aria-label="Play"
         >
           <FontAwesomeIcon icon={faPlay} />
