@@ -14,10 +14,10 @@ const PlayerControls = ({
   onNextClick,
 }) => {
   return (
-    <div className="audio-controls text-4xl text-neutral-600 transition-colors duration-200">
+    <div className="audio-controls text-2xl text-neutral-600">
       <button
         type="button"
-        className="prev hover:text-white mr-8"
+        className="prev hover:text-white mr-8 transition-colors duration-200"
         aria-label="Previous"
         onClick={onPrevClick}
       >

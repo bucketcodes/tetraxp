@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             menuLinks={data.site.siteMetadata.menuLinks}
           />
-          <main className="px-4 w-full" style={{ zIndex: "1" }}>
+          <main className="px-4 w-full">
             {children}
           </main>
         </>

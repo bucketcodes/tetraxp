@@ -5,9 +5,9 @@ import logo from '/src/images/logo.png';
 export default function Nav({ menuLinks }) {
   return (
     
-    <div className="my-8 nav-container">
+    <div className="nav-container">
       <div className="font-bold">
-            <div className="flex flex-wrap w-full items-center justify-center">
+            <div className="flex flex-wrap w-full items-center justify-center mt-6">
                 <div className="w-auto logo">
                   <Link to="/">
                     <img src={logo} alt="Logo" width="80" />
@@ -17,7 +17,7 @@ export default function Nav({ menuLinks }) {
       </div>
       <ul className="flex">
         {menuLinks.map(({ name, link, external=false }) => (
-          <li key={name} className="mr-6 last:mr-0 hover:text-gray-100">
+          <li key={name} className="mr-6 last:mr-0 hover:text-gray-100 my-6">
             {external ? (
               <a href={link} target="_blank" rel="noreferrer">{name}</a>
             ) : (

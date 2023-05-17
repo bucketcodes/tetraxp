@@ -64,15 +64,15 @@ const MusicPage = () => {
   ];
 
   return (
-	<div className="flex flex-col items-center">
+	<div className="flex flex-col items-center w-4/5 mx-auto">
 	  <Player tracks={tracks} />
-	  <div className="flex space-x-4 mt-8 mb-8">
-		<a href="https://open.spotify.com/artist/7zUMXgIz0g5CuFSilLSORs?si=bedUmj5wSCWtWQ7jRiHQLw" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaSpotify className="w-8 h-8" /></a>
-		<a href="https://soundcloud.com/tetra" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaSoundcloud className="w-8 h-8" /></a>
-		<a href="https://tidal.com/browse/artist/33497574" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><SiTidal className="w-8 h-8" /></a>
-		<a href="https://music.apple.com/us/artist/tetra/1354069759" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaApple className="w-8 h-8" /></a>
-		<a href="https://www.youtube.com/channel/UC34UXLnwwkrNg9juqmbz6lg" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaYoutube className="w-8 h-8" /></a>
-		<a href="https://genius.com/artists/Tetra" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><SiGenius className="w-8 h-8" /></a>
+	  <div className="flex space-x-6 mt-6 mb-8">
+		<a aria-label="Spotify" href="https://open.spotify.com/artist/7zUMXgIz0g5CuFSilLSORs?si=bedUmj5wSCWtWQ7jRiHQLw" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaSpotify className="w-6 h-6" /></a>
+		<a aria-label="Soundcloud" href="https://soundcloud.com/tetra" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaSoundcloud className="w-6 h-6" /></a>
+		<a aria-label="Tidal" href="https://tidal.com/browse/artist/33497574" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><SiTidal className="w-6 h-6" /></a>
+		<a aria-label="Apple" href="https://music.apple.com/us/artist/tetra/1354069759" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaApple className="w-6 h-6" /></a>
+		<a aria-label="Youtube" href="https://www.youtube.com/channel/UC34UXLnwwkrNg9juqmbz6lg" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaYoutube className="w-6 h-6" /></a>
+		<a aria-label="Genius" href="https://genius.com/artists/Tetra" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><SiGenius className="w-6 h-6" /></a>
 	  </div>
 	  {/* Add your music-related content here */}
 	</div>

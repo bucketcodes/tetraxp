@@ -1,8 +1,12 @@
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import Masonry from "react-masonry-css"
-import prand from "pure-rand"
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Masonry from "react-masonry-css";
+import prand from "pure-rand";
+
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
 
 const breakpointColumnsObj = {
   default: 6,
@@ -11,20 +15,20 @@ const breakpointColumnsObj = {
   1024: 4,
   768: 4,
   640: 4,
-}
+};
 
 const ArtPage = () => {
-  const [selectedImage, setSelectedImage] = React.useState(null)
+  const [selectedImage, setSelectedImage] = React.useState(null);
 
   const openModal = (image) => {
-    setSelectedImage(image)
-    document.body.classList.add("modal-open")
-  }
+    setSelectedImage(image);
+    document.body.classList.add("modal-open");
+  };
 
   const closeModal = () => {
-    setSelectedImage(null)
-    document.body.classList.remove("modal-open")
-  }
+    setSelectedImage(null);
+    document.body.classList.remove("modal-open");
+  };
 
   const data = useStaticQuery(graphql`
     query {
@@ -47,9 +51,9 @@ const ArtPage = () => {
         }
       }
     }
-  `)
+  `);
 
-  const shuffledEdges = shuffleArray([...data.allFile.edges])
+  const shuffledEdges = shuffleArray([...data.allFile.edges]);
 
   return (
     <div>
@@ -59,7 +63,7 @@ const ArtPage = () => {
           onClick={closeModal}
           onKeyDown={(e) => {
             if (e.key === "Escape") {
-              closeModal()
+              closeModal();
             }
           }}
           tabIndex={0}
@@ -100,7 +104,7 @@ const ArtPage = () => {
 
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="flex pr-2 pl-2 md:pr-4 md:pl-4"
+        className="flex"
         columnClassName="grid_column gap-8"
       >
         {shuffledEdges.map(({ node }, index) => (
@@ -134,19 +138,19 @@ const ArtPage = () => {
         ))}
       </Masonry>
     </div>
-  )
-}
+  );
+};
 
 const shuffleArray = (arr) => {
-  const seed = 3242524521252
-  const rng = prand.mersenne(seed)
+  const seed = 3242524521252;
+  const rng = prand.mersenne(seed);
   for (let i = arr.length - 1; i > 0; i--) {
-    const j = prand.unsafeUniformIntDistribution(0, i, rng)
-    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    const j = prand.unsafeUniformIntDistribution(0, i, rng);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-  return arr
-}
+  return arr;
+};
 
-export default ArtPage
+export default ArtPage;
 
-export const Head = () => <title>Art</title>
+export const Head = () => <title>Art</title>;
