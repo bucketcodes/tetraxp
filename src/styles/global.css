@@ -9,6 +9,15 @@ html, body {
     overflow-x: hidden;
 }
 
+.small-step {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.small-step:focus {
+  box-shadow: 0px;
+}
+
 .my-image-button:hover .gatsby-image-wrapper {
     filter: brightness(0.7);
   }

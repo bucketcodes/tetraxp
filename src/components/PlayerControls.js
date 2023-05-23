@@ -1,18 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPlay,
-  faPause,
-  faForward,
-  faBackward,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faPause, faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
 
-const PlayerControls = ({
-  isPlaying,
-  onPlayPauseClick,
-  onPrevClick,
-  onNextClick,
-}) => {
+const PlayerControls = ({ isPlaying, onPlayPauseClick, onPrevClick, onNextClick }) => {
   return (
     <div className="audio-controls text-2xl text-neutral-600">
       <button
@@ -27,7 +17,7 @@ const PlayerControls = ({
         <button
           type="button"
           className="pause hover:text-white mr-8 transition-colors duration-200"
-          onClick={() => onPlayPauseClick(false)} // Change this
+          onClick={() => onPlayPauseClick(false)}
           aria-label="Pause"
         >
           <FontAwesomeIcon icon={faPause} />
@@ -36,7 +26,7 @@ const PlayerControls = ({
         <button
           type="button"
           className="play hover:text-white mr-8 transition-colors duration-200"
-          onClick={() => onPlayPauseClick(true)} // Change this
+          onClick={() => onPlayPauseClick(true)}
           aria-label="Play"
         >
           <FontAwesomeIcon icon={faPlay} />

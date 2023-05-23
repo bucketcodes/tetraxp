@@ -20,6 +20,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.12",
+    "@material-tailwind/react": "^2.0.1",
     "body-parser": "^1.20.2",
     "camelcase": "^7.0.1",
     "classnames": "^2.3.2",

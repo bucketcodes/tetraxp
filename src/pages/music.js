@@ -64,7 +64,7 @@ const MusicPage = () => {
   ];
 
   return (
-	<div className="flex flex-col items-center w-4/5 mx-auto">
+	<div className="flex flex-col items-center mx-auto">
 	  <Player tracks={tracks} />
 	  <div className="flex space-x-6 mt-6 mb-8">
 		<a aria-label="Spotify" href="https://open.spotify.com/artist/7zUMXgIz0g5CuFSilLSORs?si=bedUmj5wSCWtWQ7jRiHQLw" target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-white transition-colors duration-300"><FaSpotify className="w-6 h-6" /></a>

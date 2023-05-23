@@ -69,10 +69,10 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col  w-4/5 max-w-sm mx-auto">
+    <div className="flex flex-col max-w-sm mx-auto">
       <form
         onSubmit={handleSubmit}
-        className="bg-neutral-900 shadow-md rounded p-4 mb-2"
+        className="bg-neutral-900 shadow-md rounded-lg p-4 mb-2"
       >
         <div className="mb-2">
           <input
@@ -128,34 +128,32 @@ const ContactPage = () => {
           {status && <p className="text-green-500 text-sm">{status}</p>}
         </div>
       </form>
-
+      <div className="flex flex-col items-center">
       {captchaToken && <div className="mt-4" id="recaptcha-container"></div>}
 
-      {captchaToken && (
-        <div className="">
-          <p className="text-xs text-center">
-            reCAPTCHA protected.
-            <a
-              className="text-neutral-600 hover:text-neutral-400"
-              href="https://policies.google.com/privacy"
-            >
-              {" "}
-              <b>Privacy Policy</b>
-            </a>{" "}
-            &
-            <a
-              className="text-neutral-600 hover:text-neutral-400"
-              href="https://policies.google.com/terms"
-            >
-              {" "}
-              <b>ToS</b>
-            </a>{" "}
-            apply.
-          </p>
-        </div>
-      )}
-      <div className="flex flex-col items-center">
-        <div className="flex space-x-4 mt-6 mb-8">
+{captchaToken && (
+  <div className="">
+    <p className="text-xs text-center">
+      reCAPTCHA protected. {"("}
+      <a
+        className="text-neutral-600 hover:text-neutral-400"
+        href="https://policies.google.com/privacy"
+      >
+        {""}
+        <b>Privacy Policy</b>
+      </a>{" "}
+      &
+      <a
+        className="text-neutral-600 hover:text-neutral-400"
+        href="https://policies.google.com/terms"
+      >
+        {" "}
+        <b>ToS</b>
+      </a>{")"}
+    </p>
+  </div>
+)}
+        <div className="flex space-x-6 mt-6 mb-8">
           <a
             aria-label="Instagram"
             href="https://www.instagram.com/tetra.eth/"
@@ -194,7 +192,9 @@ const ContactPage = () => {
           </a>
         </div>
       </div>
+
     </div>
+    
   );
 };
 

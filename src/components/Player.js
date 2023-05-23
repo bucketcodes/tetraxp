@@ -1,10 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useCallback,
-  useLayoutEffect,
-} from "react";
+import React, { useState, useEffect, useRef, useCallback, useLayoutEffect } from "react";
 import PlayerControls from "./PlayerControls";
 
 const Player = ({ tracks }) => {
@@ -14,38 +8,29 @@ const Player = ({ tracks }) => {
   const [volume, setVolume] = useState(0.2);
   const [isAudioReady, setIsAudioReady] = useState(false);
 
-  const { title, artist, image, audioSrc } = tracks[trackIndex];
-
   const audioRef = useRef(new Audio());
   const intervalRef = useRef();
   const isReady = useRef(false);
 
+  const { title, artist, image, audioSrc } = tracks[trackIndex];
   const { duration } = audioRef.current;
-
-  const currentPercentage = duration
-    ? `${(trackProgress / duration) * 100}%`
-    : "0%";
+  const currentPercentage = duration ? `${(trackProgress / duration) * 100}%` : "0%";
+  const currentVolume = volume;
 
   const trackStyling = {
-    backgroundImage: `-webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #222))`,
+    backgroundImage: `-webkit-gradient(linear, 0% 0%, 98% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #222))`,
   };
+
   const volumeStyling = {
-    backgroundImage: `-webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${volume}, #fff), color-stop(${volume}, #222))`,
+    backgroundImage: `-webkit-gradient(linear, 0% 0%, 98% 0%, color-stop(${currentVolume}, #fff), color-stop(${currentVolume}, #222))`,
   };
 
   const toNextTrack = useCallback(() => {
-    setTrackIndex((currentIndex) => {
-      if (currentIndex < tracks.length - 1) {
-        return currentIndex + 1;
-      } else {
-        return 0;
-      }
-    });
+    setTrackIndex(currentIndex => (currentIndex < tracks.length - 1) ? currentIndex + 1 : 0);
   }, [tracks.length]);
 
   const startTimer = useCallback(() => {
     clearInterval(intervalRef.current);
-
     intervalRef.current = setInterval(() => {
       if (audioRef.current.ended) {
         toNextTrack();
@@ -55,11 +40,10 @@ const Player = ({ tracks }) => {
     }, 1000);
   }, [toNextTrack]);
 
-  const onScrub = (value) => {
+  const onScrub = value => {
     if (value < 0) {
       value = 0;
     }
-  
     if (isAudioReady) {
       cancelAnimationFrame(intervalRef.current);
       audioRef.current.currentTime = value;
@@ -75,14 +59,10 @@ const Player = ({ tracks }) => {
   };
 
   const toPrevTrack = () => {
-    if (trackIndex - 1 < 0) {
-      setTrackIndex(tracks.length - 1);
-    } else {
-      setTrackIndex(trackIndex - 1);
-    }
+    setTrackIndex(trackIndex => (trackIndex - 1 < 0) ? tracks.length - 1 : trackIndex - 1);
   };
 
-  const onVolumeChange = (value) => {
+  const onVolumeChange = value => {
     setVolume(value);
     audioRef.current.volume = value;
   };
@@ -100,7 +80,6 @@ const Player = ({ tracks }) => {
   useLayoutEffect(() => {
     if (audioSrc) {
       audioRef.current.pause();
-
       audioRef.current = new Audio(audioSrc);
       setTrackProgress(audioRef.current.currentTime);
 
@@ -131,7 +110,7 @@ const Player = ({ tracks }) => {
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
-            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            className="object-cover w-full h-full rounded-lg"
             src={image}
             alt={`track artwork for ${title} by ${artist}`}
           />
@@ -147,23 +126,21 @@ const Player = ({ tracks }) => {
               min="0"
               max={duration ? duration : `${duration}`}
               className="w-full h-2 bg-gray-300 rounded-full appearance-none focus:outline-none"
-              onChange={(e) => onScrub(e.target.value)}
-              onTouchStart={(e) => onScrub(e.target.value)}
+              onChange={e => onScrub(e.target.value)}
+              onTouchStart={e => onScrub(e.target.value)}
               onTouchEnd={onScrubEnd}
               onMouseUp={onScrubEnd}
               onKeyUp={onScrubEnd}
               style={trackStyling}
             />
-            <div
-              className={`flex items-center sm:justify-between justify-center mt-2`}
-            >
+            <div className="flex items-center sm:justify-between justify-center mt-2">
               <PlayerControls
                 isPlaying={isPlaying}
                 onPrevClick={toPrevTrack}
                 onNextClick={toNextTrack}
                 onPlayPauseClick={setIsPlaying}
               />
-              <div className={`flex items-center hidden sm:block`}>
+              <div className="flex items-center hidden sm:block">
                 <input
                   id="volume-slider"
                   type="range"
@@ -172,7 +149,7 @@ const Player = ({ tracks }) => {
                   step="0.01"
                   value={volume}
                   className="w-20 h-2 bg-gray-300 rounded-full appearance-none focus:outline-none"
-                  onChange={(e) => onVolumeChange(e.target.value)}
+                  onChange={e => onVolumeChange(e.target.value)}
                   style={volumeStyling}
                 />
               </div>
