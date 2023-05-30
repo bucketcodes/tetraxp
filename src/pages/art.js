@@ -41,7 +41,7 @@ const ArtPage = () => {
             childImageSharp {
               gatsbyImageData(
                 placeholder: DOMINANT_COLOR
-                formats: [AUTO]
+                formats: [AUTO, WEBP]
                 quality: 70
                 breakpoints: [576, 768, 992, 1200]
               )
