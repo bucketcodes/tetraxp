@@ -1,8 +1,18 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay, faPause, faForward, faBackward } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlay,
+  faPause,
+  faForward,
+  faBackward,
+} from "@fortawesome/free-solid-svg-icons";
 
-const PlayerControls = ({ isPlaying, onPlayPauseClick, onPrevClick, onNextClick }) => {
+const PlayerControls = ({
+  isPlaying,
+  onPlayPauseClick,
+  onPrevClick,
+  onNextClick,
+}) => {
   return (
     <div className="audio-controls text-2xl text-neutral-600">
       <button

@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, useCallback, useLayoutEffect } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  useLayoutEffect,
+} from "react";
 import PlayerControls from "./PlayerControls";
 
 const Player = ({ tracks }) => {
@@ -14,7 +20,9 @@ const Player = ({ tracks }) => {
 
   const { title, artist, image, audioSrc } = tracks[trackIndex];
   const { duration } = audioRef.current;
-  const currentPercentage = duration ? `${(trackProgress / duration) * 100}%` : "0%";
+  const currentPercentage = duration
+    ? `${(trackProgress / duration) * 100}%`
+    : "0%";
   const currentVolume = volume;
 
   const trackStyling = {
@@ -26,7 +34,9 @@ const Player = ({ tracks }) => {
   };
 
   const toNextTrack = useCallback(() => {
-    setTrackIndex(currentIndex => (currentIndex < tracks.length - 1) ? currentIndex + 1 : 0);
+    setTrackIndex((currentIndex) =>
+      currentIndex < tracks.length - 1 ? currentIndex + 1 : 0
+    );
   }, [tracks.length]);
 
   const startTimer = useCallback(() => {
@@ -40,7 +50,7 @@ const Player = ({ tracks }) => {
     }, 1000);
   }, [toNextTrack]);
 
-  const onScrub = value => {
+  const onScrub = (value) => {
     if (value < 0) {
       value = 0;
     }
@@ -59,10 +69,12 @@ const Player = ({ tracks }) => {
   };
 
   const toPrevTrack = () => {
-    setTrackIndex(trackIndex => (trackIndex - 1 < 0) ? tracks.length - 1 : trackIndex - 1);
+    setTrackIndex((trackIndex) =>
+      trackIndex - 1 < 0 ? tracks.length - 1 : trackIndex - 1
+    );
   };
 
-  const onVolumeChange = value => {
+  const onVolumeChange = (value) => {
     setVolume(value);
     audioRef.current.volume = value;
   };
@@ -126,8 +138,8 @@ const Player = ({ tracks }) => {
               min="0"
               max={duration ? duration : `${duration}`}
               className="w-full h-2 bg-gray-300 rounded-full appearance-none focus:outline-none"
-              onChange={e => onScrub(e.target.value)}
-              onTouchStart={e => onScrub(e.target.value)}
+              onChange={(e) => onScrub(e.target.value)}
+              onTouchStart={(e) => onScrub(e.target.value)}
               onTouchEnd={onScrubEnd}
               onMouseUp={onScrubEnd}
               onKeyUp={onScrubEnd}
@@ -149,7 +161,7 @@ const Player = ({ tracks }) => {
                   step="0.01"
                   value={volume}
                   className="w-20 h-2 bg-gray-300 rounded-full appearance-none focus:outline-none"
-                  onChange={e => onVolumeChange(e.target.value)}
+                  onChange={(e) => onVolumeChange(e.target.value)}
                   style={volumeStyling}
                 />
               </div>
