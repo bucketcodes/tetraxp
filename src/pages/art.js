@@ -3,10 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Masonry from "react-masonry-css";
 import prand from "pure-rand";
-
-window.onload = function () {
-  window.scrollTo(0, 0);
-};
+import { motion } from "framer-motion";
 
 const breakpointColumnsObj = {
   default: 6,
@@ -56,88 +53,99 @@ const ArtPage = () => {
   const shuffledEdges = shuffleArray([...data.allFile.edges]);
 
   return (
-    <div>
-      {selectedImage && (
-        <div
-          className="modal-container top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
-          onClick={closeModal}
-          onKeyDown={(e) => {
-            if (e.key === "Escape") {
-              closeModal();
-            }
-          }}
-          tabIndex={0}
-          role="button"
-          aria-label="Close Modal"
-        >
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div>
+        {selectedImage && (
           <div
-            className="max-w-full w-full h-screen flex justify-center items-center"
-            style={{ maxWidth: "90vw", maxHeight: "100vh" }}
-          >
-            <GatsbyImage
-              style={{ maxHeight: "90vh" }}
-              image={getImage(selectedImage.node.childImageSharp)}
-              alt=""
-              layout="constrained"
-              objectFit="contain"
-              aspectRatio={
-                selectedImage.node.childImageSharp.gatsbyImageData.aspectRatio
+            className="modal-container top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
+            onClick={closeModal}
+            onKeyDown={(e) => {
+              if (e.key === "Escape") {
+                closeModal();
               }
-            />
-            {selectedImage && (
-              <div
-                className="fixed top-0 left-0 w-full bg-black text-white text-center py-2"
-                style={{ zIndex: "1", position: "fixed" }}
+            }}
+            tabIndex={0}
+            role="button"
+            aria-label="Close Modal"
+          >
+            <div
+              className="max-w-full w-full h-screen flex justify-center items-center"
+              style={{ maxWidth: "90vw", maxHeight: "100vh" }}
+            >
+              <GatsbyImage
+                style={{ maxHeight: "90vh" }}
+                image={getImage(selectedImage.node.childImageSharp)}
+                alt=""
+                layout="constrained"
+                objectFit="contain"
+                aspectRatio={
+                  selectedImage.node.childImageSharp.gatsbyImageData.aspectRatio
+                }
+              />
+              {selectedImage && (
+                <div
+                  className="fixed top-0 left-0 w-full bg-black text-white text-center py-2"
+                  style={{ zIndex: "1", position: "fixed" }}
+                >
+                  <p className="text-lg font-bold">
+                    {selectedImage.node.relativePath
+                      .split("/")
+                      .pop()
+                      .split(".")[0]
+                      .toUpperCase()}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="flex"
+          columnClassName="grid_column gap-8"
+        >
+          {shuffledEdges.map(({ node }, index) => (
+            <div
+              key={index}
+              className="grid"
+              style={{
+                marginBottom: "4px",
+                marginLeft: "2px",
+                marginRight: "2px",
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => openModal({ node })}
+                className="w-full my-image-button"
               >
-                <p className="text-lg font-bold">
-                  {selectedImage.node.relativePath
+                <GatsbyImage
+                  image={getImage(node.childImageSharp)}
+                  alt=""
+                  layout="fluid"
+                />
+                <p
+                  className="text-gray-500"
+                  style={{ display: "none", marginBottom: "8px" }}
+                >
+                  {node.relativePath
                     .split("/")
                     .pop()
                     .split(".")[0]
                     .toUpperCase()}
                 </p>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className="flex"
-        columnClassName="grid_column gap-8"
-      >
-        {shuffledEdges.map(({ node }, index) => (
-          <div
-            key={index}
-            className="grid"
-            style={{
-              marginBottom: "4px",
-              marginLeft: "2px",
-              marginRight: "2px",
-            }}
-          >
-            <button
-              type="button"
-              onClick={() => openModal({ node })}
-              className="w-full my-image-button"
-            >
-              <GatsbyImage
-                image={getImage(node.childImageSharp)}
-                alt=""
-                layout="fluid"
-              />
-              <p
-                className="text-gray-500"
-                style={{ display: "none", marginBottom: "8px" }}
-              >
-                {node.relativePath.split("/").pop().split(".")[0].toUpperCase()}
-              </p>
-            </button>
-          </div>
-        ))}
-      </Masonry>
-    </div>
+              </button>
+            </div>
+          ))}
+        </Masonry>
+      </div>
+    </motion.div>
   );
 };
 

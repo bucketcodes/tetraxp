@@ -10,11 +10,12 @@ import julyaugart from "../assets/julyaugart.webp";
 import death from "../assets/death.webp";
 import winter2020shoot from "../assets/winter2020shoot.webp";
 import pa2021 from "../assets/pa2021.webp";
+import john2020shoot from "../assets/john2020shoot.webp";
 import { Fragment } from "react";
 import { FaGlobe } from "react-icons/fa";
 import { HiMusicNote } from "react-icons/hi";
 
-const Era4Prime = ({}) => {
+const primeEra = () => {
   return (
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -28,7 +29,7 @@ const Era4Prime = ({}) => {
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
-          Garnet Christmas Shoot (Last Winter 2020)
+          Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)
         </p>
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
@@ -39,13 +40,15 @@ const Era4Prime = ({}) => {
           resources to people struggling with the pandemic, whether it was new
           hardware, benefits, or emotional assistance. I discovered the joy and
           fulfillment of serving others through my work. I also had to deal with
-          my own unexpected situations. During that time, I realized that I had
-          to make the best of what I had, and not let fear or uncertainty stop
-          me from pursuing my dreams. I invested in a laptop that enabled me to
-          do everything I wanted to do, from working remotely to creating art. I
-          bought my first car, I started making art for myself. I saw things
-          start to improve for me, as I gained more confidence and recognition
-          for my work.
+          my own unexpected situations.
+        </p>
+        <p className="text-gray-600 text-xs mb-6">
+          During that time, I realized that I had to make the best of what I
+          had, and not let fear or uncertainty stop me from pursuing my dreams.
+          I invested in a laptop that enabled me to do everything I wanted to
+          do, from working remotely to creating art. I bought my first car, I
+          started making art for myself. I saw things start to improve for me,
+          as I gained more confidence and recognition for my work.
         </p>
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -125,9 +128,10 @@ const Era4Prime = ({}) => {
           members of the community. Considering that Ah! Hermes was still active
           digitally at the time, all of us had transitioned to the platform. I
           decided to convert the tokens to Ethereum, from there I found out
-          about the NFT market, joining this Telegram Community named Art
-          Gallery Auction House, setting up my MetaMask wallet, and selling my
-          genesis piece on the marketplace called Rarible.
+          about the NFT market in February of 2021, joining this Telegram
+          Community named Art Gallery Auction House, setting up my MetaMask
+          wallet, and selling my genesis piece on the marketplace called
+          Rarible.
         </p>
         <div className="relative">
           <img
@@ -244,6 +248,14 @@ const Era4Prime = ({}) => {
         </p>
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
+          The beginning of 2021 was another surreal experience. I had invested
+          heavily on Gamestop stock back in December. My options were for
+          January 15th, they were worthless just before a week of expiration.
+          Three days prior to expiration, that's when everything changed. It was
+          the only time I 30X'd an investment in so little time, I bet that if
+          it paid off we'd take a trip, so we went to Lake Wallenpaupack.
+        </p>
+        <p className="text-gray-600 text-xs mb-6">
           Throughout the year of 2021, I traveled across Chicago and Charlotte,
           knocking on doors and pitching products as a salesperson. It was a
           grueling and exhausting job, but it also sparked my interest in a new
@@ -264,6 +276,22 @@ const Era4Prime = ({}) => {
         </p>
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={john2020shoot}
+            alt={`2020 John`}
+          />
+        </div>
+        <p className="text-xs mt-2 mb-2 text-neutral-600">
+          Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)
+        </p>
+        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <p className="text-gray-600 text-xs mb-6">
+          As soon as I returned with my whip, we cruised up to this dope park
+          that Yeeevs had put me on. We snapped some fire pics for the debut
+          album I was about to drop and they turned out legendary.
+        </p>
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -296,4 +324,4 @@ const Era4Prime = ({}) => {
   );
 };
 
-export default Era4Prime;
+export default primeEra;

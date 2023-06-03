@@ -8,7 +8,7 @@ module.exports = {
         link: "/art",
       },
       {
-        name: "NFT", 
+        name: "NFT",
         link: "/nft",
         //link: "https://foundation.app/tetra",
         //external: true,
@@ -45,10 +45,10 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require('postcss-import'),
-          require('tailwindcss'),
-          require('autoprefixer'),
-          require('postcss-focus-visible')
+          require("postcss-import"),
+          require("tailwindcss"),
+          require("autoprefixer"),
+          require("postcss-focus-visible"),
         ],
       },
     },

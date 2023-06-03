@@ -6,21 +6,21 @@ import desktop1 from "../assets/desktop1.webp";
 import desktop2 from "../assets/desktop2.webp";
 import { Fragment } from "react";
 
-const primeEra = ({}) => {
+const originEra = () => {
   return (
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">ORIGIN ERA</h1>
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
-          I spent a lot of time being creative, imagining different Zoo Tycoon 2
-          Parks, dreaming of becoming a Veterinarian, working with various
-          animals and drawing the ones I liked in old notebooks, or just playing
-          PlayStation 2, finding glitches in Ratchet: Deadlocked and trying to
-          break the game. I built forums on InvisionFree, uploaded images and
-          photos on Photobucket, and made friends from around the world on MSN.
-          Humble and naive beginnings, where the transition from Dial-Up to DSL
-          was significant.
+          I spent a lot of time exploring creativeness in weird ways, imagining
+          different Zoo Tycoon 2 Parks, dreaming of becoming a Veterinarian,
+          working with various animals and drawing the ones I liked in old
+          notebooks, or just playing PlayStation 2, finding glitches in Ratchet:
+          Deadlocked and trying to break the game. I built forums on
+          InvisionFree, uploaded images and photos on Photobucket, and made
+          friends from around the world on MSN. Humble and naive beginnings,
+          where the transition from Dial-Up to DSL was still significant.
         </p>
         <div className="relative">
           <img
@@ -119,4 +119,4 @@ const primeEra = ({}) => {
   );
 };
 
-export default primeEra;
+export default originEra;

@@ -11,14 +11,12 @@ import art2018 from "../assets/art2018.jpg";
 import sunny from "../assets/sunny.jpg";
 import selfie2016 from "../assets/selfie2016.webp";
 import { Fragment } from "react";
-import {
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { FaGlobe } from "react-icons/fa";
 import { HiMusicNote } from "react-icons/hi";
 import { MdOutlineFacebook } from "react-icons/Md";
 
-const Era3Expansion = ({}) => {
+const expansionEra = () => {
   return (
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -41,17 +39,17 @@ const Era3Expansion = ({}) => {
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
-          Van Cortlandt Park, Bronx (Fall 2016)
+          Van Cortlandt Park, Bronx (Shot by Yeeevs) (Fall 2016)
         </p>
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I created my first well-crafted song of my own in 2017. It was called
           GTA over a BlackCivic beat. 2018 was a tough but transformative year
-          for me. I filmed my first music video that summer, flew to LA by
+          for me; I filmed my first music video that summer, flew to LA by
           myself, and upgraded my equipment with my own money. LA was an amazing
           trip that taught me how to depend on myself and collaborate with other
           talented music artists. We had a blast, just vibing, living, and
-          creating.
+          creating. I was creating a catalyst.
         </p>
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -127,7 +125,7 @@ const Era3Expansion = ({}) => {
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
-          Tetra Performance, Brooklyn (Fall 2019)
+          Tetra Performance, Brooklyn (Shot by Joven) (Fall 2019)
         </p>
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -221,7 +219,10 @@ const Era3Expansion = ({}) => {
           This photo captures a moment when I was indulging in my passion for
           DIY fashion. I had a knack for transforming plain band t-shirts into
           unique and edgy pieces by bleaching and distressing them. I would
-          resell the shirts on online platforms like Grailed and Mercari.
+          resell the shirts on online platforms like Grailed and Mercari. At the
+          time, I went over to Yeeev's crib to get some help to shoot the
+          shirts, although many shots were left unused, there are still gem
+          portraits from this day archived.
         </p>
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -238,11 +239,13 @@ const Era3Expansion = ({}) => {
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           The year 2019 marked the zenith of this epoch. After completing my
-          education, I accelerated my ambitions. I returned to the LA for the
-          launch of Stay Sunny by Holland Izz. We founded Timeless in that same
-          summer. When I came back to New York, we transformed Ah! Hermes into a
-          formidable musical collective. It was a splendid culmination of what
-          we had cultivated in the previous years.
+          education, I accelerated my ambitions. After the recharge I felt in
+          going to LA the first time in 2018, I returned to the LA for the
+          launch of Stay Sunny by Holland Izz, had a successful launch party for
+          that as well. We founded Timeless in that same summer. When I came
+          back to New York, we transformed Ah! Hermes into a formidable musical
+          collective. It was a splendid culmination of what we had cultivated in
+          the previous years.
         </p>
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
@@ -256,6 +259,7 @@ const Era3Expansion = ({}) => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Cover Artwork Compilation (Summer 2018)
         </p>
+        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Throughout this year, I focused on creating cover artwork for various
           clients while also exploring other artistic mediums. This was a way to
@@ -280,4 +284,4 @@ const Era3Expansion = ({}) => {
   );
 };
 
-export default Era3Expansion;
+export default expansionEra;

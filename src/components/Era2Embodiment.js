@@ -7,10 +7,10 @@ import johnkev2014 from "../assets/johnkev2014.webp";
 import { Fragment } from "react";
 import { FaGlobe } from "react-icons/fa";
 
-const Era2Embodiment = ({}) => {
+const embodimentEra = () => {
   return (
     <Fragment>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 transition-opacity duration-500">
         <h1 className=" text-2xl font-bold">EMBODIMENT ERA</h1>
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
@@ -66,11 +66,11 @@ const Era2Embodiment = ({}) => {
         </div>
         <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
-          After leaving Hydrocity Gaming, I witnessed the emergence of some
-          sub-communities that branched out and connected with each other. Some
-          examples were Disorderly Gaming, Realms of Denryden, and many more. I
-          founded CloudCrux with my friend Mikey, and it became a vital part of
-          our community-building experience.
+          After leaving my community, Hydrocity Gaming, I witnessed the
+          emergence of some sub-communities that branched out and connected with
+          each other. Some examples were Disorderly Gaming, Realms of Denryden,
+          and many more. I founded CloudCrux with my friend Mikey, and it became
+          a vital part of our community-building experience.
         </p>
         <p className="text-gray-600 text-xs mb-6">
           From him, I learned the ins and outs of Linux Debian, Server
@@ -141,4 +141,4 @@ const Era2Embodiment = ({}) => {
   );
 };
 
-export default Era2Embodiment;
+export default embodimentEra;
