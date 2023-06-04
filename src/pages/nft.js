@@ -66,7 +66,7 @@ const NFTPage = () => {
                 src={link.icon}
                 type="image/svg+xml"
                 alt={link.label}
-                className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-5 h-5"
+                className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-14 h-5"
               />
             </a>
           ))}

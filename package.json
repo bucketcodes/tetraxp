@@ -59,7 +59,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-icons": "^4.8.0",
     "react-masonry-css": "^1.0.16",
-    "react-modal-video": "^2.0.0",
+    "react-modal-video": "^1.2.10",
     "react-player": "^2.12.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.2",
