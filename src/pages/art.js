@@ -62,7 +62,7 @@ const ArtPage = () => {
       <div>
         {selectedImage && (
           <div
-            className="modal-container top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
+            className="z-20 modal-container top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
             onClick={closeModal}
             onKeyDown={(e) => {
               if (e.key === "Escape") {
@@ -74,7 +74,7 @@ const ArtPage = () => {
             aria-label="Close Modal"
           >
             <div
-              className="max-w-full w-full h-screen flex justify-center items-center"
+              className="max-w-full w-full h-screen flex justify-center items-center z-20"
               style={{ maxWidth: "90vw", maxHeight: "100vh" }}
             >
               <GatsbyImage
@@ -88,10 +88,7 @@ const ArtPage = () => {
                 }
               />
               {selectedImage && (
-                <div
-                  className="fixed top-0 left-0 w-full bg-black text-white text-center py-2"
-                  style={{ zIndex: "1", position: "fixed" }}
-                >
+                <div className="fixed top-0 left-0 w-full bg-black text-white text-center py-2 z-20">
                   <p className="text-lg font-bold">
                     {selectedImage.node.relativePath
                       .split("/")

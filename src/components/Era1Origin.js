@@ -11,7 +11,7 @@ const originEra = () => {
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">ORIGIN ERA</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I spent a lot of time exploring creativeness in weird ways, imagining
           different Zoo Tycoon 2 Parks, dreaming of becoming a Veterinarian,
@@ -36,7 +36,7 @@ const originEra = () => {
 
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">LEGENDS IN TIME</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           My childhood was marked by a thrilling adventure in the virtual world
           of Ratchet: Deadlocked on PlayStation 2, a 2005 action platformer game
@@ -58,7 +58,7 @@ const originEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           First Signature Ever Created (2006)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I realized that I had reached the limit of my artistic abilities at
           that time. The only thing I could do was draw in my notebook with a
@@ -79,7 +79,7 @@ const originEra = () => {
       </div>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">WINDOWS XP</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I tried to create my own aesthetic on the computer screen, but it was
           a hopeless endeavor. I scattered my icons all over the desktop,
@@ -98,7 +98,7 @@ const originEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           First Desktop Screenshot (2007)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I had a knack for exploring the inner workings of Windows and
           installing custom themes, rather than using actual design software. So

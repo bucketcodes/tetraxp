@@ -15,7 +15,7 @@ const artistBio = () => {
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">BIO</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Tetra is a multi-disciplinary artist from New York who is known for
           their unique blend of mediums and styles. Born and raised in the city,
@@ -35,7 +35,7 @@ const artistBio = () => {
           help them grow and learn.
         </p>
         <h1 className="mt-2 text-2xl font-bold">TIMELINE (AGE)</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <Timeline>
           <TimelineItem>
             <TimelineConnector className="[&>*]:bg-red-500" />

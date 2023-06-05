@@ -12,7 +12,7 @@ const embodimentEra = () => {
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 transition-opacity duration-500">
         <h1 className=" text-2xl font-bold">EMBODIMENT ERA</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I had a lot of roles to play when I was of this age. It didn't seem
           like work, but I was taking on a lot of responsibilities. I had to
@@ -64,7 +64,7 @@ const embodimentEra = () => {
             <FaGlobe className="w-4 h-4" />
           </a>
         </div>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           After leaving my community, Hydrocity Gaming, I witnessed the
           emergence of some sub-communities that branched out and connected with
@@ -105,7 +105,7 @@ const embodimentEra = () => {
           />
         </div>
         <h1 className=" text-2xl font-bold">HYDROCITY GAMING</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I started a thread on Hydrocity Gaming, a gaming community that I was
           part of, to showcase my signature designs. A signature is a small
@@ -126,7 +126,7 @@ const embodimentEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           TheMrTaco Ender Dragon Signature (Spring 2013)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
 
         <p className="text-gray-600 text-xs mb-6">
           This project helped me refine my Photoshop skills and learn new

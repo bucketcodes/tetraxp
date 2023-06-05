@@ -21,7 +21,7 @@ const expansionEra = () => {
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">EXPANSION ERA</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           The world was against me. It was a perilous time full of betrayals,
           deaths, and changes of values. I could hardly smile, chaos was
@@ -41,7 +41,7 @@ const expansionEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Van Cortlandt Park, Bronx (Shot by Yeeevs) (Fall 2016)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I created my first well-crafted song of my own in 2017. It was called
           GTA over a BlackCivic beat. 2018 was a tough but transformative year
@@ -84,7 +84,7 @@ const expansionEra = () => {
             <HiMusicNote className="w-4 h-4" />
           </a>
         </div>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Ah! Hermes was created in 2012, but 2019 was when we turned it into a
           collective of local and international music artists and producers. We
@@ -106,7 +106,7 @@ const expansionEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Joven Freestyle, Tetra HQ (Winter 2019)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           In late 2019, I stepped on the stage for the first time in my life. It
           was one of the most exhilarating and unforgettable experiences I ever
@@ -169,7 +169,7 @@ const expansionEra = () => {
             <MdOutlineFacebook className="w-4 h-4" />
           </a>
         </div>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Timeless was created in 2019. It was one of the most ambitious
           projects started with me and my friends like brothers, Jay and Eddie.
@@ -191,7 +191,7 @@ const expansionEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Timeless Shoots, Charlotte (Summer 2019)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -214,7 +214,7 @@ const expansionEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Yeeevs HQ, Bronx (Fall 2016)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           This photo captures a moment when I was indulging in my passion for
           DIY fashion. I had a knack for transforming plain band t-shirts into
@@ -236,7 +236,7 @@ const expansionEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Driving & Beatmaking, California (Summer 2018)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           The year 2019 marked the zenith of this epoch. After completing my
           education, I accelerated my ambitions. After the recharge I felt in
@@ -259,7 +259,7 @@ const expansionEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Cover Artwork Compilation (Summer 2018)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Throughout this year, I focused on creating cover artwork for various
           clients while also exploring other artistic mediums. This was a way to

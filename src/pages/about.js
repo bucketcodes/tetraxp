@@ -255,7 +255,7 @@ const AboutPage = () => {
                 </a>
               ))}
             </div>
-            <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+            <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
 
             <div className="flex flex-col">
               {skills.map((skill, index) => (

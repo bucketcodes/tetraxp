@@ -3,7 +3,6 @@ import React, {
   useEffect,
   useRef,
   useCallback,
-  useLayoutEffect,
   Fragment,
 } from "react";
 import PlayerControls from "./PlayerControls"; // Importing the PlayerControls component
@@ -87,8 +86,6 @@ const Player = ({ tracks }) => {
     }, 1000); // Update every second
   }, [toNextTrack]);
 
-  const intervalId = useRef(null); // Ref for intervalId used in scrubbing
-
   // Function called when scrubbing the track progress bar
   const onScrub = useCallback(
     (value) => {
@@ -124,7 +121,7 @@ const Player = ({ tracks }) => {
       setIsPlaying(true); // If not playing, start playing
     }
     startTimer(); // Start the timer for track progress
-  });
+  }, [isPlaying, setIsPlaying, startTimer]);
 
   // Function called when the volume slider changes
   const onVolumeChange = (value) => {
@@ -246,8 +243,14 @@ const Player = ({ tracks }) => {
         audioRef.current.pause();
       }
 
-      // Create a new Audio object with the provided audio source
-      audioRef.current = new Audio(audioSrc);
+      // Create a new audio element
+      const audioElement = document.createElement("audio");
+
+      // Set the source of the audio element
+      audioElement.src = audioSrc;
+
+      // Assign the audio element to the ref
+      audioRef.current = audioElement;
 
       // Set the initial track progress to the current time of the audio
       setTrackProgress(audioRef?.current?.currentTime);
@@ -258,21 +261,16 @@ const Player = ({ tracks }) => {
       };
 
       // Add an event listener to the "canplaythrough" event of the audio element
-      audioRef.current.addEventListener("canplaythrough", handleAudioReady);
+      audioElement.addEventListener("canplaythrough", handleAudioReady);
 
       // Check if the component is ready to play audio
       if (isReady.current) {
-        // Set the volume of the audio
-        if (audioRef.current) {
-          audioRef.current.volume = volume;
-        }
-
         // Start playing the audio
         setIsPlaying(true);
         startTimer();
 
         // Play the audio and catch any errors
-        audioRef.current.play().catch((error) => {
+        audioElement.play().catch((error) => {
           console.error("Error playing audio:", error);
         });
       } else {
@@ -283,22 +281,16 @@ const Player = ({ tracks }) => {
       // Cleanup function to be executed when the component unmounts
       return () => {
         console.log("Component unmounted");
-
+        console.log(audioRef);
         // Pause the audio
-        if (audioRef.current) {
-          audioRef.current.pause();
+        if (audioElement) {
+          audioElement.pause();
           // Remove the event listener
-          audioRef.current.removeEventListener(
-            "canplaythrough",
-            handleAudioReady
-          );
+          audioElement.removeEventListener("canplaythrough", handleAudioReady);
         }
 
         // Clear the interval for updating the track progress
         clearInterval(intervalRef.current);
-
-        // Reset audioRef.current to avoid accessing it after unmounting
-        audioRef.current = null;
       };
     }
   }, [trackIndex, audioSrc, startTimer]);
@@ -308,7 +300,7 @@ const Player = ({ tracks }) => {
       {/* The JSX code for rendering the player component */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
         <audio ref={audioRef} /> {/* Audio player element */}
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 h-[33rem] overflow-y-clip">
           <div className="relative">
             <img
               className="object-cover w-full h-full rounded-lg"
@@ -366,7 +358,7 @@ const Player = ({ tracks }) => {
             </div>
           </div>
         </div>
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[33rem]">
           <div className="tracklist-body">
             {tracks.map((track, index) => (
               <div

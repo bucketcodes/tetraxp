@@ -1,28 +1,42 @@
 import React from "react";
 import { Link } from "gatsby";
+import { useLocation } from "@reach/router";
 import logo from "/src/images/logo.png";
 
 export default function Nav({ menuLinks }) {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+
   return (
-    <div className="nav-container">
-      <div className="font-bold">
-        <div className="flex flex-wrap w-full items-center justify-center mt-6">
-          <div className="w-auto logo z-50">
+    <div className="nav-container top-0 left-0 flex flex-col items-center justify-center text-xs text-gray-600 uppercase bg-transparent w-full z-50">
+      <div className="flex flex-wrap w-full items-center justify-center mt-6">
+        {!isLandingPage && (
+          <div className="w-auto logo">
             <Link to="/">
               <img src={logo} alt="Logo" width="80" />
             </Link>
           </div>
-        </div>
+        )}
       </div>
-      <ul className="flex z-50">
+      <div className="font-bold"></div>
+      <ul className="flex">
         {menuLinks.map(({ name, link, external = false }) => (
-          <li key={name} className="mr-4 last:mr-0 hover:text-gray-100 my-6">
+          <li key={name} className="mr-4 last:mr-0 hover:text-white my-6">
             {external ? (
-              <a href={link} target="_blank" rel="noreferrer">
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold"
+              >
                 {name}
               </a>
             ) : (
-              <Link activeClassName="text-gray-100" to={link}>
+              <Link
+                activeClassName="text-white"
+                to={link}
+                className="font-semibold"
+              >
                 {name}
               </Link>
             )}

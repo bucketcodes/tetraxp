@@ -20,7 +20,7 @@ const primeEra = () => {
     <Fragment>
       <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
         <h1 className=" text-2xl font-bold">PRIME ERA</h1>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -31,7 +31,7 @@ const primeEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           The year 2020 was a transformative one for me, as I faced
           unprecedented challenges and opportunities. I learned how to adapt and
@@ -63,7 +63,7 @@ const primeEra = () => {
         <p className="text-sm mb-2 text-neutral-600">
           January Recap (First Winter 2023)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           I had fallen into a creative slumber after settling down in North
           Carolina. I was struggling to make ends meet with random gigs and
@@ -87,7 +87,7 @@ const primeEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           July - August Art Highlights (Summer 2022)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           My work is a reflection of my inner world, where I explore the
           contrasts and complexities of human emotions. I feel the solitude of
@@ -122,7 +122,7 @@ const primeEra = () => {
             <FaGlobe className="w-4 h-4" />
           </a>
         </div>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           End of 2020, Audius had airdropped quite a few tokens to active
           members of the community. Considering that Ah! Hermes was still active
@@ -143,7 +143,7 @@ const primeEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           After Death, the Gods Rise to Create the World Again (Sold, 2022)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           This space has opened up a new world of possibilities for me as an
           artist. I have been able to sell my creations for more than I ever
@@ -188,7 +188,7 @@ const primeEra = () => {
             <HiMusicNote className="w-4 h-4" />
           </a>
         </div>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           𝐔𝐋𝐓𝐑𝐀𝐌𝐀𝐑𝐈𝐍𝐄 (əltrəməˈrēn / pisces / waterbaby) is a collaborative
           project that features Tetra as the recording artist & engineer and
@@ -223,7 +223,7 @@ const primeEra = () => {
             <HiMusicNote className="w-4 h-4" />
           </a>
         </div>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Garnet was the first official album that I released on all music
           streaming platforms, introducing myself as a solo artist and an
@@ -246,7 +246,7 @@ const primeEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Lake Wallenpaupack, Pennsylvania (First Winter 2021)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           The beginning of 2021 was another surreal experience. I had invested
           heavily on Gamestop stock back in December. My options were for
@@ -286,7 +286,7 @@ const primeEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           As soon as I returned with my whip, we cruised up to this dope park
           that Yeeevs had put me on. We snapped some fire pics for the debut
@@ -302,7 +302,7 @@ const primeEra = () => {
         <p className="text-xs mt-2 mb-2 text-neutral-600">
           Timeless, Collection 3 (Spring 2020)
         </p>
-        <hr class="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
           Even though the pandemic ravaged the world in the same month as our
           launch of Collection 3 for Timeless, we still succeeded in selling it.

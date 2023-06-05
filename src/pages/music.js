@@ -6,11 +6,21 @@ import imgSrc3 from "../assets/ghost.jpg";
 import imgSrc4 from "../assets/secretending.jpg";
 import imgSrc5 from "../assets/ultramarine.jpg";
 import imgSrc6 from "../assets/weonfire.jpg";
+import breathecover from "../assets/breathe.webp";
+import immaculatecover from "../assets/immaculate.webp";
+import lostsoulcover from "../assets/lostsoul.webp";
+import relslocover from "../assets/relslo.webp";
+import wakeupcover from "../assets/wakeup.webp";
 import awayout from "../assets/awayout.mp3";
 import myfault from "../assets/myfault.mp3";
 import ghost from "../assets/ghost.mp3";
-import secretending from "../assets/secretending.mp3";
+import secret from "../assets/secret.mp3";
 import ultramarine from "../assets/ultramarine.mp3";
+import breathe from "../assets/breathe.mp3";
+import immaculate from "../assets/immaculate.mp3";
+import lostsoul from "../assets/lostsoul.mp3";
+import relslo from "../assets/relslo.mp3";
+import wakeup from "../assets/wakeup.mp3";
 import weonfire from "../assets/weonfire.mp3";
 import { FaSpotify, FaSoundcloud, FaApple, FaYoutube } from "react-icons/fa";
 import { SiTidal, SiGenius } from "react-icons/si";
@@ -50,31 +60,6 @@ const socialLinks = [
   },
 ];
 
-const renderSocialLinks = (trackLinks) => {
-  return (
-    <div className="flex space-x-7 mb-6">
-      {socialLinks.map((link) => {
-        const hasLink = link.key in trackLinks;
-        const IconComponent = link.icon;
-        return (
-          <a
-            key={link.label}
-            aria-label={link.label}
-            href={trackLinks[link.key]}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`text-neutral-500 hover:text-white transition-colors duration-300 ${
-              hasLink ? "" : "hidden"
-            }`}
-          >
-            <IconComponent className="w-5 h-5" />
-          </a>
-        );
-      })}
-    </div>
-  );
-};
-
 const MusicPage = () => {
   const tracks = [
     {
@@ -110,9 +95,17 @@ const MusicPage = () => {
       },
     },
     {
+      title: "Wake Up (Unreleased)",
+      artist: "Tetra + 8TH",
+      audioSrc: wakeup,
+      image: wakeupcover,
+      color: "#5f9fff",
+      links: {},
+    },
+    {
       title: "Secret Ending",
-      artist: "Tetra Feat. Joven",
-      audioSrc: secretending,
+      artist: "Tetra + Joven",
+      audioSrc: secret,
       image: imgSrc4,
       color: "#5f9fff",
       links: {
@@ -136,6 +129,14 @@ const MusicPage = () => {
       },
     },
     {
+      title: "RELSLO (Unreleased)",
+      artist: "Tetra + 8TH",
+      audioSrc: relslo,
+      image: relslocover,
+      color: "#5f9fff",
+      links: {},
+    },
+    {
       title: "We On Fire",
       artist: "Tetra",
       audioSrc: weonfire,
@@ -146,6 +147,39 @@ const MusicPage = () => {
           "https://open.spotify.com/track/1OiCLdKM4U9uQv8N8WRNMM?si=60927f9f5c7d4566",
         apple:
           "https://music.apple.com/us/album/we-on-fire/1576790571?i=1576790577",
+      },
+    },
+    {
+      title: "Immaculate Conception",
+      artist: "Tetra",
+      audioSrc: immaculate,
+      image: immaculatecover,
+      color: "#5f9fff",
+      links: {
+        spotify:
+          "https://open.spotify.com/track/37fiLM6El5x7IZ5mHjBJ5W?si=29a04d4b4c5940ab",
+        apple:
+          "https://music.apple.com/us/album/immaculate-conception/1546326755?i=1546326827",
+      },
+    },
+    {
+      title: "Lost Soul (Unreleased)",
+      artist: "Tetra",
+      audioSrc: lostsoul,
+      image: lostsoulcover,
+      color: "#5f9fff",
+      links: {},
+    },
+    {
+      title: "Breathe",
+      artist: "Tetra",
+      audioSrc: breathe,
+      image: breathecover,
+      color: "#5f9fff",
+      links: {
+        spotify:
+          "https://open.spotify.com/track/3mwMCWgYw1vaFgeCUBeacI?si=3708ef9990234426",
+        apple: "https://music.apple.com/us/album/breathe-single/1576878061",
       },
     },
     // add more tracks here
