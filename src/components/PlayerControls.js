@@ -14,10 +14,10 @@ const PlayerControls = ({
   onNextClick,
 }) => {
   return (
-    <div className="audio-controls text-2xl text-neutral-600">
+    <div className="text-neutral-600 text-2xl ">
       <button
         type="button"
-        className="prev hover:text-white mr-8 transition-colors duration-200"
+        className="prev hover:text-white transition-colors duration-200 w-10 h-10"
         aria-label="Previous"
         onClick={onPrevClick}
       >
@@ -26,7 +26,7 @@ const PlayerControls = ({
       {isPlaying ? (
         <button
           type="button"
-          className="pause hover:text-white mr-8 transition-colors duration-200"
+          className="pause hover:text-white transition-colors duration-200 w-10 h-10"
           onClick={() => onPlayPauseClick(false)}
           aria-label="Pause"
         >
@@ -35,7 +35,7 @@ const PlayerControls = ({
       ) : (
         <button
           type="button"
-          className="play hover:text-white mr-8 transition-colors duration-200"
+          className="play hover:text-white transition-colors duration-200 w-10 h-10"
           onClick={() => onPlayPauseClick(true)}
           aria-label="Play"
         >
@@ -44,7 +44,7 @@ const PlayerControls = ({
       )}
       <button
         type="button"
-        className="next hover:text-white transition-colors duration-200"
+        className="next hover:text-white transition-colors duration-200 w-10 h-10"
         aria-label="Next"
         onClick={onNextClick}
       >

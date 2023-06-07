@@ -91,14 +91,8 @@ const Player = ({ tracks }) => {
     (value) => {
       const adjustedValue = Math.max(value, 0); // Ensure the value is not negative
       if (audioRef.current) {
-        if (isAudioReady && audioRef.current) {
-          intervalId.current = requestAnimationFrame(() => {
-            audioRef.current.currentTime = adjustedValue; // Update the current time of the audio player
-            setTrackProgress(audioRef.current.currentTime); // Update the track progress
-          });
-        } else {
-          cancelAnimationFrame(intervalId.current);
-        }
+        audioRef.current.currentTime = adjustedValue; // Update the current time of the audio player
+        setTrackProgress(audioRef.current.currentTime); // Update the track progress
         // Check if the audio player is paused and hasn't started playing yet
         if (
           audioRef.current.paused &&
@@ -194,7 +188,7 @@ const Player = ({ tracks }) => {
         audioRef.current.pause(); // Pause the current audio if it exists
       }
       setTrackIndex(index);
-      setIsPlaying(true);
+      setIsPlaying(false);
       setTrackProgress(0);
     }
   };
@@ -204,8 +198,9 @@ const Player = ({ tracks }) => {
     if (audioRef && audioRef.current) {
       if (isPlaying) {
         audioRef.current.play();
-        audioRef.current.volume = volume; // Set the volume of the audio player
         startTimer(); // Start the timer for track progress
+        audioRef.current.volume = volume; // Set the volume of the audio player
+
         // Check if the audio player is ready to play
         if (audioRef.current.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
           audioRef.current
@@ -309,7 +304,7 @@ const Player = ({ tracks }) => {
       {/* The JSX code for rendering the player component */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
         <audio ref={audioRef} /> {/* Audio player element */}
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 h-[33rem] overflow-y-clip">
+        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
           <div className="relative">
             <img
               className="object-cover w-full h-full rounded-lg"
@@ -367,7 +362,7 @@ const Player = ({ tracks }) => {
             </div>
           </div>
         </div>
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[33rem]">
+        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[33.3rem]">
           <div className="tracklist-body">
             {tracks.map((track, index) => (
               <div
