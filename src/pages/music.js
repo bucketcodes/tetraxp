@@ -63,15 +63,15 @@ const socialLinks = [
 const MusicPage = () => {
   const tracks = [
     {
-      title: "A Way Out (Unreleased)",
-      artist: "Tetra",
+      title: "A Way Out 1.1 [Unreleased]",
+      artist: "Tetra (Prod. Navan)",
       audioSrc: awayout,
       image: imgSrc,
       color: "#00aeb0",
     },
     {
       title: "My Fault",
-      artist: "Tetra",
+      artist: "Tetra (Prod. Joven)",
       audioSrc: myfault,
       image: imgSrc2,
       color: "#ffb77a",
@@ -84,7 +84,7 @@ const MusicPage = () => {
     },
     {
       title: "Ghost",
-      artist: "Tetra",
+      artist: "Tetra (Prod. MXXXY)",
       audioSrc: ghost,
       image: imgSrc3,
       color: "#5f9fff",
@@ -95,7 +95,7 @@ const MusicPage = () => {
       },
     },
     {
-      title: "Wake Up (Unreleased)",
+      title: "Wake Up 1.0 [Unreleased]",
       artist: "Tetra + 8TH",
       audioSrc: wakeup,
       image: wakeupcover,
@@ -104,7 +104,7 @@ const MusicPage = () => {
     },
     {
       title: "Secret Ending",
-      artist: "Tetra + Joven",
+      artist: "Tetra + Joven (Prod. MXXXY)",
       audioSrc: secret,
       image: imgSrc4,
       color: "#5f9fff",
@@ -116,8 +116,8 @@ const MusicPage = () => {
       },
     },
     {
-      title: "Ultramarine",
-      artist: "Tetra",
+      title: "ULTRAMARINE",
+      artist: "Tetra (Prod. Joven)",
       audioSrc: ultramarine,
       image: imgSrc5,
       color: "#5f9fff",
@@ -129,7 +129,7 @@ const MusicPage = () => {
       },
     },
     {
-      title: "RELSLO (Unreleased)",
+      title: "RELSLO 1.0 [Unreleased]",
       artist: "Tetra + 8TH",
       audioSrc: relslo,
       image: relslocover,
@@ -138,7 +138,7 @@ const MusicPage = () => {
     },
     {
       title: "We On Fire",
-      artist: "Tetra",
+      artist: "Tetra (Prod. Joven)",
       audioSrc: weonfire,
       image: imgSrc6,
       color: "#5f9fff",
@@ -151,7 +151,7 @@ const MusicPage = () => {
     },
     {
       title: "Immaculate Conception",
-      artist: "Tetra",
+      artist: "Tetra (Prod. OXVX)",
       audioSrc: immaculate,
       image: immaculatecover,
       color: "#5f9fff",
@@ -163,8 +163,8 @@ const MusicPage = () => {
       },
     },
     {
-      title: "Lost Soul (Unreleased)",
-      artist: "Tetra",
+      title: "Lost Soul 2.1 (Unreleased)",
+      artist: "Tetra (Prod. OXVX)",
       audioSrc: lostsoul,
       image: lostsoulcover,
       color: "#5f9fff",
@@ -172,7 +172,7 @@ const MusicPage = () => {
     },
     {
       title: "Breathe",
-      artist: "Tetra",
+      artist: "Tetra (Prod. MXXXY)",
       audioSrc: breathe,
       image: breathecover,
       color: "#5f9fff",
