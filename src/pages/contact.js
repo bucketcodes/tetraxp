@@ -54,6 +54,11 @@ const ContactPage = () => {
     script.src =
       "https://www.google.com/recaptcha/enterprise.js?render=6LcsleklAAAAAM4df81x6rJaMHH_1JEFztpyzZnK";
     script.defer = true;
+    script.async = true; // Add the async attribute for improved performance
+    script.onerror = () => {
+      console.error("Failed to load reCAPTCHA script.");
+    };
+
     document.head.appendChild(script);
 
     script.onload = () => {
@@ -72,7 +77,7 @@ const ContactPage = () => {
   const socialLinks = [
     {
       label: "Instagram",
-      href: "https://www.instagram.com/tetra.eth/",
+      href: "https://www.instagram.com/tetraxp/",
       icon: AiFillInstagram,
     },
     {

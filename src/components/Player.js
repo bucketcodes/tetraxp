@@ -362,7 +362,7 @@ const Player = ({ tracks }) => {
             </div>
           </div>
         </div>
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[33.3rem]">
+        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[33.75rem]">
           <div className="tracklist-body">
             {tracks.map((track, index) => (
               <div

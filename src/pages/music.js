@@ -96,7 +96,7 @@ const MusicPage = () => {
     },
     {
       title: "Wake Up 1.0 [Unreleased]",
-      artist: "Tetra + 8TH",
+      artist: "Tetra + 8TH (Prod. eeryskies)",
       audioSrc: wakeup,
       image: wakeupcover,
       color: "#5f9fff",
@@ -130,7 +130,7 @@ const MusicPage = () => {
     },
     {
       title: "RELSLO 1.0 [Unreleased]",
-      artist: "Tetra + 8TH",
+      artist: "Tetra + 8TH (Prod. bas)",
       audioSrc: relslo,
       image: relslocover,
       color: "#5f9fff",
@@ -163,7 +163,7 @@ const MusicPage = () => {
       },
     },
     {
-      title: "Lost Soul 2.1 (Unreleased)",
+      title: "Lost Soul 2.1 [Unreleased]",
       artist: "Tetra (Prod. OXVX)",
       audioSrc: lostsoul,
       image: lostsoulcover,

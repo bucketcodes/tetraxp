@@ -12,7 +12,8 @@ import Bio from "../components/ArtistBio";
 import { motion } from "framer-motion";
 
 import { Stepper, Step, Button, Typography } from "@material-tailwind/react";
-import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillInstagram, AiFillTwitterCircle, AiOutlineCloudDownload
+} from "react-icons/ai";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { MdOutlineFacebook } from "react-icons/Md";
 import { useState, useEffect } from "react";
@@ -266,6 +267,16 @@ const AboutPage = () => {
                 />
               ))}
             </div>
+            <a
+  href="../assets/cvApril2023.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="font-bold rounded-lg bg-neutral-800 text-white text-xs py-1 mt-2 mb-1 text-center block hover:bg-neutral-600 transition-colors duration-300"
+>
+  <AiOutlineCloudDownload
+ className="inline-block w-4 h-4 mr-2" />
+  DOWNLOAD CV
+</a>
           </div>
 
           {activeStep === 0 && <Bio />}

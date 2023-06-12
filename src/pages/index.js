@@ -1,39 +1,37 @@
-import React, { useState, useEffect, Fragment, useRef } from "react";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import React, {
+  useState,
+  useEffect,
+  Fragment,
+  useRef,
+} from "react";
+import { motion } from "framer-motion";
 import logo from "/src/images/logo.png";
-import imgSrc4 from "../assets/secretending.jpg";
-import imgSrc5 from "../assets/ultramarine.jpg";
-import imgSrc6 from "../assets/weonfire.jpg";
+import imgSrc4 from "../assets/So Sick of Feeling.webp";
+import imgSrc5 from "../assets/I Yearn for Your Return.webp";
+import imgSrc6 from "../assets/I Picked These Flowers For You.webp";
+import imgSrc7 from "../assets/The Truth Is So Clear.webp";
+import classnames from "classnames";
+import {
+  AiFillInstagram,
+  AiFillTwitterCircle,
+  AiFillBehanceCircle,
+} from "react-icons/ai";
+import { MdOutlineFacebook } from "react-icons/Md";
 
-const images = [imgSrc4, imgSrc5, imgSrc6]; // Add more image paths as needed
+const images = [imgSrc4, imgSrc5, imgSrc6, imgSrc7]; // Add more image paths as needed
 
 const ParallaxImages = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const { scrollY } = useViewportScroll();
   const imageRefs = useRef([]);
+  const intervalRef = useRef();
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     }, 5000); // Change slide every 5 seconds
 
-    return () => clearInterval(interval); // Clean up the interval on unmount
+    return () => clearInterval(intervalRef.current); // Clear the interval on unmount
   }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = scrollY.get();
-      imageRefs.current.forEach((ref, index) => {
-        if (ref && ref.offsetTop !== undefined) {
-          const yPos = -(scrollTop - ref.offsetTop) / 2; // Adjust the parallax effect speed here
-          ref.style.transform = `translate3d(0px, ${yPos}px, 0px)`;
-        }
-      });
-    };
-
-    scrollY.onChange(handleScroll);
-    return () => scrollY.clearListeners();
-  }, [scrollY]);
 
   return (
     <Fragment>
@@ -43,49 +41,77 @@ const ParallaxImages = () => {
           ref={(ref) => (imageRefs.current[index] = ref)}
           src={src}
           alt={`Slide ${index}`}
-          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ${
-            index === currentImage ? "opacity-100" : "opacity-0"
-          }`}
+          className={classnames(
+            "z-10 absolute top-0 left-0 w-full h-full object-cover",
+            {
+              "opacity-100": index === currentImage,
+              "opacity-0": index !== currentImage,
+            }
+          )}
           initial={{ opacity: 0 }}
           animate={{ opacity: index === currentImage ? 1 : 0 }}
           transition={{ duration: 0.5 }}
         />
       ))}
-
       {/* Rest of your component code */}
     </Fragment>
   );
 };
 
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/tetraxp/",
+    icon: AiFillInstagram,
+  },
+  {
+    label: "Twitter",
+    href: "https://twitter.com/tetragocommando",
+    icon: AiFillTwitterCircle,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/tetraxp",
+    icon: MdOutlineFacebook,
+  },
+  {
+    label: "Behance",
+    href: "https://www.behance.net/tetraxp",
+    icon: AiFillBehanceCircle,
+  },
+];
+
 const IndexPage = () => {
   return (
     <Fragment>
       <ParallaxImages />
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
+      <div className=" z-20 absolute top-0 left-0 object-cover w-full h-full flex flex-col justify-center items-center">
         <img src={logo} alt="Your Logo" className="w-64 h-64 object-contain" />
         <div className="text-6xl font-bold text-white mt-8">TETRA</div>
-        <div className="text-lg text-white mt-4">AT WAR WITH ENTROPY</div>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-8 rounded">
-          WORK
-        </button>
+        <div className="text-lg font-semibold text-white text-bold mt-4">
+          CREATING THE WORLD OF TOMORROW
+        </div>
+        <a href="/art">
+          <button class="border border-white text-white font-bold py-2 px-4 mt-8 rounded-lg bg-transparent hover:text-black transition-colors duration-300 hover:bg-white hover:text-neutral-800">
+            PORTFOLIO
+          </button>
+        </a>
+        <div className="absolute bottom-12">
+        {socialLinks.map((link) => (
+          <a
+            key={link.label}
+            aria-label={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform text-white mt-8"
+          >
+            <link.icon className="w-8 h-8 mx-4 hover:border-solid inline-block" />
+          </a>
+        ))}
       </div>
-
+      </div>
       {/* Additional Sections */}
-      <div className="h-screen flex flex-col justify-center items-center">
-        <h2 className="text-4xl font-bold">Section 1</h2>
-        <p>Content for section 1 goes here.</p>
-      </div>
-
-      <div className="h-screen flex flex-col justify-center items-center">
-        <h2 className="text-4xl font-bold">Section 2</h2>
-        <p>Content for section 2 goes here.</p>
-      </div>
-
-      <div className="h-screen flex flex-col justify-center items-center">
-        <h2 className="text-4xl font-bold">Section 3</h2>
-        <p>Content for section 3 goes here.</p>
-      </div>
-      {/* Rest of your component code */}
     </Fragment>
   );
 };
