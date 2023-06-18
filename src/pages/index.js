@@ -111,7 +111,7 @@ const IndexPage = () => {
         ))}
       </div>
       </div>
-      {/* Additional Sections */}
+      {/* Additional Section */}
     </Fragment>
   );
 };
