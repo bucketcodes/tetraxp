@@ -83,7 +83,7 @@ const AboutPage = () => {
     >
       <div>
         <div>
-          <div className="flex max-w-xs mx-auto mb-10 sm:mb-10">
+          <div className="flex max-w-xs mx-auto mb-10 sm:mb-10 z-5">
             <Stepper
               activeStep={activeStep}
               isLastStep={(value) => setIsLastStep(value)}
@@ -271,7 +271,7 @@ const AboutPage = () => {
   href="../assets/cvApril2023.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  className="font-bold rounded-lg bg-neutral-800 text-white text-xs py-1 mt-2 mb-1 text-center block hover:bg-neutral-600 transition-colors duration-300"
+  className="font-bold rounded-lg bg-neutral-800 text-white text-xs py-1 mt-2 mb-1 text-center block hover:bg-neutral-700 transition-colors duration-300"
 >
   <AiOutlineCloudDownload
  className="inline-block w-4 h-4 mr-2" />

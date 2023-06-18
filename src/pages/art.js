@@ -147,7 +147,7 @@ const ArtPage = () => {
 };
 
 const shuffleArray = (arr) => {
-  const seed = 32425245212524;
+  const seed = 3522497;
   const rng = prand.mersenne(seed);
   for (let i = arr.length - 1; i > 0; i--) {
     const j = prand.unsafeUniformIntDistribution(0, i, rng);

@@ -51,12 +51,12 @@ const Player = ({ tracks }) => {
 
   // CSS styling for the track progress bar
   const trackStyling = {
-    backgroundImage: `-webkit-gradient(linear, 0% 0%, 98% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #222))`,
+    backgroundImage: `-webkit-gradient(linear, 0% 0%, 98% 0%, color-stop(${currentPercentage}, #999), color-stop(${currentPercentage}, #222))`,
   };
 
   // CSS styling for the volume slider
   const volumeStyling = {
-    backgroundImage: `-webkit-gradient(linear, 0% 0%, 98% 0%, color-stop(${currentVolume}, #fff), color-stop(${currentVolume}, #222))`,
+    backgroundImage: `-webkit-gradient(linear, 0% 0%, 98% 0%, color-stop(${currentVolume}, #999), color-stop(${currentVolume}, #222))`,
   };
 
   // Function to go to the previous track

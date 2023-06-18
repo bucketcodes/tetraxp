@@ -19,7 +19,8 @@ module.exports = {
       },
       {
         name: "SHOP",
-        link: "/shop",
+        link: "https://shop.tetraxp.com",
+        external: true,
       },
       {
         name: "ABOUT",

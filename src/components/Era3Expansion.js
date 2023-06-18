@@ -35,7 +35,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={me16}
-            alt={`2016 John in Van Cortlandt`}
+            alt={`Van Cortlandt Park, Bronx (Shot by Yeeevs) (Fall 2016)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -100,7 +100,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={ahhermes}
-            alt={`Ahhermes`}
+            alt={`Joven Freestyle, Tetra HQ (Winter 2019)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -121,7 +121,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={johnperform}
-            alt={`John Performance`}
+            alt={`Tetra Performance, Brooklyn (Shot by Joven) (Fall 2019)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -133,7 +133,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={timeless2}
-            alt={`Timeless`}
+            alt={`Timeless Photoshop Shoots Eddie/Jay/Tetra (2019)`}
           />
         </div>
         <h1 className=" mt-2 text-2xl font-bold">TIMELESS</h1>
@@ -185,7 +185,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={timelesspics}
-            alt={`Timeless Pics`}
+            alt={`Timeless Shoots, Charlotte (Summer 2019)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -196,7 +196,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={jaybw}
-            alt={`Timeless Pics`}
+            alt={`Jay with Timeless Stickers, Charlotte (Summer 2019)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -208,11 +208,11 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={selfie2016}
-            alt={`2016 John Selfie`}
+            alt={`Portrait at Yeeevs HQ, Bronx (Fall 2016)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
-          Yeeevs HQ, Bronx (Fall 2016)
+          Portrait at Yeeevs HQ, Bronx (Fall 2016)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
@@ -230,11 +230,11 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={beat}
-            alt={`LA Kyle Making a Beat while Driving`}
+            alt={`Kyle Driving & Beatmaking, California (Summer 2018)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
-          Driving & Beatmaking, California (Summer 2018)
+          Kyle Driving & Beatmaking, California (Summer 2018)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-gray-600 text-xs mb-6">
@@ -253,7 +253,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={art2018}
-            alt={`LA`}
+            alt={`Cover Artwork Compilation (Summer 2018)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -273,7 +273,7 @@ const expansionEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={sunny}
-            alt={`LA`}
+            alt={`Holland Izz - Sunny Tapes Vol 1 (Summer 2018)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">

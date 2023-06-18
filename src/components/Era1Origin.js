@@ -52,7 +52,7 @@ const originEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={rc}
-            alt={`Ratchet and Clank Signature`}
+            alt={`Ratchet and Clank Signature (2006)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -70,7 +70,7 @@ const originEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={vivi}
-            alt={`Vivi Signature`}
+            alt={`Vivi Signature (2006)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -108,7 +108,7 @@ const originEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={desktop2}
-            alt={`New Desktop`}
+            alt={`Windows XP Custom Theme (2007)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">

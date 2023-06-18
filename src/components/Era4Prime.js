@@ -25,7 +25,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={winter2020shoot}
-            alt={`2020 John`}
+            alt={`Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -42,7 +42,7 @@ const primeEra = () => {
           fulfillment of serving others through my work. I also had to deal with
           my own unexpected situations.
         </p>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-gray-600 text-xs mb-3">
           During that time, I realized that I had to make the best of what I
           had, and not let fear or uncertainty stop me from pursuing my dreams.
           I invested in a laptop that enabled me to do everything I wanted to
@@ -56,7 +56,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={janrecap}
-            alt={`January Art Recap 2023`}
+            alt={`January Recap (First Winter 2023)`}
           />
         </div>
         <h1 className=" mt-2 text-2xl font-bold">TETRA RENAISSANCE</h1>
@@ -81,7 +81,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={julyaugart}
-            alt={`julyaugart`}
+            alt={`July - August Art Highlights (Summer 2022)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -104,7 +104,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={nft1}
-            alt={`I'll Protect You In Every Life`}
+            alt={`I'll Protect You in Every Life (Sold, 2022)`}
           />
         </div>
         <h1 className=" mt-2 text-2xl font-bold">NFTS</h1>
@@ -137,7 +137,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={death}
-            alt={`January Art Recap 2023`}
+            alt={`After Death, the Gods Rise to Create the World Again (Sold, 2022)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -159,7 +159,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={cheers}
-            alt={`Cheers Club`}
+            alt={`Cheers Club, 1 ETH (Sold 2021)`}
           />
         </div>
 
@@ -172,7 +172,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={ultramarine}
-            alt={`Ultramarine`}
+            alt={`Ultramarine, Released July 16, 2021`}
           />
         </div>
         <h1 className=" mt-2 text-2xl font-bold">ULTRAMARINE</h1>
@@ -205,7 +205,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={garnet}
-            alt={`GARNET ALBUM COVER`}
+            alt={`GARNET, Released December 25, 2020`}
           />
         </div>
         <h1 className=" mt-2 text-2xl font-bold">GARNET</h1>
@@ -240,7 +240,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={pa2021}
-            alt={`2020 John`}
+            alt={`Lake Wallenpaupack, Pennsylvania (First Winter 2021)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -280,7 +280,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={john2020shoot}
-            alt={`2020 John`}
+            alt={`Garnet Shoot 2, NY (Shot by Yeeevs) (Last Winter 2020)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -296,7 +296,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={timeless2020}
-            alt={`LA`}
+            alt={`Timeless, Collection 3 (Spring 2020)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -313,7 +313,7 @@ const primeEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={me2019}
-            alt={`2020 John`}
+            alt={`Tetra Post-Performance, Brooklyn (First Winter 2020)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">

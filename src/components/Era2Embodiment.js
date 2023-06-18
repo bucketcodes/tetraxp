@@ -36,7 +36,7 @@ const embodimentEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={johnkev2014}
-            alt={`CloudCrux Network`}
+            alt={`Tetra HQ recording with Yeeevs, Bronx (Fall 2014)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -89,7 +89,7 @@ const embodimentEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={ironman}
-            alt={`Ironman`}
+            alt={`Ironman Signature (Spring 2013)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
@@ -101,7 +101,7 @@ const embodimentEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={sonic}
-            alt={`Hydrosis`}
+            alt={`Hydrosis Sonic Signature`}
           />
         </div>
         <h1 className=" text-2xl font-bold">HYDROCITY GAMING</h1>
@@ -120,7 +120,7 @@ const embodimentEra = () => {
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={end}
-            alt={`TheMrTaco The End Signature`}
+            alt={`TheMrTaco Ender Dragon Signature (Spring 2013)`}
           />
         </div>
         <p className="text-xs mt-2 mb-2 text-neutral-600">
