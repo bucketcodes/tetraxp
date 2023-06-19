@@ -55,7 +55,7 @@ const embodimentEra = () => {
         <p className="text-sm mb-2 text-neutral-600">Founded 2013</p>
         <div className="flex space-x-3">
           <a
-            aria-label="Foundation"
+            aria-label="CloudCrux Network"
             href="https://cloudcrux.com/"
             target="_blank"
             rel="noopener noreferrer"

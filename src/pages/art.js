@@ -4,6 +4,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Masonry from "react-masonry-css";
 import prand from "pure-rand";
 import { motion } from "framer-motion";
+//import works from "../assets/works.svg";
+import collabs from "../assets/collabs.svg";
+import { ReactSVG } from "react-svg";
+
 
 const breakpointColumnsObj = {
   default: 6,
@@ -52,13 +56,48 @@ const ArtPage = () => {
 
   const shuffledEdges = shuffleArray([...data.allFile.edges]);
 
+const links = [
+  /*{
+    href: "/works",
+    label: "Commissions",
+    icon: works,
+  },*/
+  {
+    href: "/collabs",
+    label: "Collaborations",
+    icon: collabs,
+  }
+];
+
   return (
+    
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <div className="flex flex-col items-center">
+        <div className="flex space-x-7 mb-6">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target={link.target}
+              rel={link.rel}
+              className=""
+            >
+              <ReactSVG
+                aria-label={link.label}
+                src={link.icon}
+                type="image/svg+xml"
+                alt={link.label}
+                className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-14 h-5"
+              />
+            </a>
+          ))}
+        </div>
+        </div>
       <div>
         {selectedImage && (
           <div
@@ -147,7 +186,7 @@ const ArtPage = () => {
 };
 
 const shuffleArray = (arr) => {
-  const seed = 3522497;
+  const seed = 35224111;
   const rng = prand.mersenne(seed);
   for (let i = arr.length - 1; i > 0; i--) {
     const j = prand.unsafeUniformIntDistribution(0, i, rng);

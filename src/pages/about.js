@@ -9,6 +9,7 @@ import ExpansionEra from "../components/Era3Expansion";
 import EmbodimentEra from "../components/Era2Embodiment";
 import OriginEra from "../components/Era1Origin";
 import Bio from "../components/ArtistBio";
+import cv from "../assets/cv.pdf";
 import { motion } from "framer-motion";
 
 import { Stepper, Step, Button, Typography } from "@material-tailwind/react";
@@ -268,7 +269,7 @@ const AboutPage = () => {
               ))}
             </div>
             <a
-  href="../assets/cvApril2023.pdf"
+  href={cv}
   target="_blank"
   rel="noopener noreferrer"
   className="font-bold rounded-lg bg-neutral-800 text-white text-xs py-1 mt-2 mb-1 text-center block hover:bg-neutral-700 transition-colors duration-300"

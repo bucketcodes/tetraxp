@@ -13,7 +13,8 @@ import pa2021 from "../assets/pa2021.webp";
 import john2020shoot from "../assets/john2020shoot.webp";
 import { Fragment } from "react";
 import { FaGlobe } from "react-icons/fa";
-import { HiMusicNote } from "react-icons/hi";
+import { FaSpotify, FaApple } from "react-icons/fa";
+import { SiTidal, SiGenius } from "react-icons/si";
 
 const primeEra = () => {
   return (
@@ -179,13 +180,40 @@ const primeEra = () => {
         <p className="text-sm mb-2 text-neutral-600">Released July 16, 2021</p>
         <div className="flex space-x-3">
           <a
-            aria-label="Foundation"
-            href="https://open.spotify.com/album/1qBikR7DOkbWVUYz1WrPwB?si=aSa8BMCFSrqkDe9X-kX0xw"
+            aria-label="Ultramarine Spotify"
+            href="https://open.spotify.com/album/1qBikR7DOkbWVUYz1WrPwB?si=-mIn9peETrqam0eFisvngg"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-600 hover:text-white transition-colors duration-300"
           >
-            <HiMusicNote className="w-4 h-4" />
+            <FaSpotify className="w-4 h-4" />
+          </a>
+          <a
+            aria-label="Ultramarine Apple"
+            href="https://music.apple.com/us/album/ultramarine/1576790571"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-white transition-colors duration-300"
+          >
+            <FaApple className="w-4 h-4" />
+          </a>
+          <a
+            aria-label="Ultramarine Tidal"
+            href="https://tidal.com/browse/album/191193416"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-white transition-colors duration-300"
+          >
+            <SiTidal className="w-4 h-4" />
+          </a>
+          <a
+            aria-label="Ultramarine Genius"
+            href="https://genius.com/albums/Tetra/Ultramarine"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-white transition-colors duration-300"
+          >
+            <SiGenius className="w-4 h-4" />
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
@@ -213,14 +241,41 @@ const primeEra = () => {
           Released December 25, 2020
         </p>
         <div className="flex space-x-3">
-          <a
-            aria-label="Foundation"
-            href="https://open.spotify.com/album/5xpBNPrFQH6BbiBrjSiYKA?si=CTPmGeb6SU6ERmzXQ8d1HQ"
+        <a
+            aria-label="GARNET Spotify"
+            href="https://open.spotify.com/album/5xpBNPrFQH6BbiBrjSiYKA?si=Y8oaO8GHTiCpcKWLhADf9w"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-600 hover:text-white transition-colors duration-300"
           >
-            <HiMusicNote className="w-4 h-4" />
+            <FaSpotify className="w-4 h-4" />
+          </a>
+          <a
+            aria-label="GARNET Apple"
+            href="https://music.apple.com/us/album/garnet/1546326755"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-white transition-colors duration-300"
+          >
+            <FaApple className="w-4 h-4" />
+          </a>
+          <a
+            aria-label="GARNET Tidal"
+            href="https://tidal.com/browse/album/167347270"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-white transition-colors duration-300"
+          >
+            <SiTidal className="w-4 h-4" />
+          </a>
+          <a
+            aria-label="GARNET Genius"
+            href="https://genius.com/albums/Tetra/Garnet"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-white transition-colors duration-300"
+          >
+            <SiGenius className="w-4 h-4" />
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>

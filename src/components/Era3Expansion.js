@@ -66,7 +66,7 @@ const expansionEra = () => {
         </p>
         <div className="flex space-x-3">
           <a
-            aria-label="Instagram"
+            aria-label="Ah! Hermes Instagram"
             href="https://www.instagram.com/ah.hermes/"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +75,7 @@ const expansionEra = () => {
             <AiFillInstagram className="w-4 h-4" />
           </a>
           <a
-            aria-label="Audius"
+            aria-label="Ah! Hermes Audius"
             href="https://audius.co/ahhermes"
             target="_blank"
             rel="noopener noreferrer"
@@ -142,7 +142,7 @@ const expansionEra = () => {
         </p>
         <div className="flex space-x-3">
           <a
-            aria-label="Instagram"
+            aria-label="Timeless Instagram"
             href="https://www.instagram.com/ny.timeless/"
             target="_blank"
             rel="noopener noreferrer"
@@ -151,7 +151,7 @@ const expansionEra = () => {
             <AiFillInstagram className="w-4 h-4" />
           </a>
           <a
-            aria-label="Twitter"
+            aria-label="Timeless Twitter"
             href="https://nytimeless.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -160,7 +160,7 @@ const expansionEra = () => {
             <FaGlobe className="w-4 h-4" />
           </a>
           <a
-            aria-label="Facebook"
+            aria-label="Timeless Facebook"
             href="https://www.facebook.com/tetraxp"
             target="_blank"
             rel="noopener noreferrer"
