@@ -4,11 +4,6 @@ import era1 from "../assets/kidportrait.jpg";
 import era2 from "../assets/10-15.jpg";
 import era3 from "../assets/16-19.jpg";
 import era4 from "../assets/20-xx.jpg";
-import PrimeEra from "../components/Era4Prime";
-import ExpansionEra from "../components/Era3Expansion";
-import EmbodimentEra from "../components/Era2Embodiment";
-import OriginEra from "../components/Era1Origin";
-import Bio from "../components/ArtistBio";
 import cv from "../assets/cv.pdf";
 import { motion } from "framer-motion";
 
@@ -17,7 +12,13 @@ import { AiFillInstagram, AiFillTwitterCircle, AiOutlineCloudDownload
 } from "react-icons/ai";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { MdOutlineFacebook } from "react-icons/md";
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
+
+const Bio = lazy(() => import("../components/ArtistBio"));
+const OriginEra = lazy(() => import("../components/Era1Origin"));
+const EmbodimentEra = lazy(() => import("../components/Era2Embodiment"));
+const ExpansionEra = lazy(() => import("../components/Era3Expansion"));
+const PrimeEra = lazy(() => import("../components/Era4Prime"));
 
 const SkillBar = ({ skillName, progress }) => {
   const [currentProgress, setCurrentProgress] = useState(0);
@@ -68,6 +69,23 @@ const socialMediaLinks = [
 ];
 
 const AboutPage = () => {
+  const renderActiveStep = () => {
+    switch (activeStep) {
+      case 0:
+        return <Bio />;
+      case 1:
+        return <OriginEra />;
+      case 2:
+        return <EmbodimentEra />;
+      case 3:
+        return <ExpansionEra />;
+      case 4:
+        return <PrimeEra />;
+      default:
+        return null;
+    }
+  };
+
   const [activeStep, setActiveStep] = React.useState(0);
   const [isLastStep, setIsLastStep] = React.useState(false);
   const [isFirstStep, setIsFirstStep] = React.useState(false);
@@ -280,15 +298,7 @@ const AboutPage = () => {
 </a>
           </div>
 
-          {activeStep === 0 && <Bio />}
-
-          {activeStep === 1 && <OriginEra />}
-
-          {activeStep === 2 && <EmbodimentEra />}
-
-          {activeStep === 3 && <ExpansionEra />}
-
-          {activeStep === 4 && <PrimeEra />}
+          <Suspense fallback={<div></div>}>{renderActiveStep()}</Suspense>
         </div>
       </div>
     </motion.div>

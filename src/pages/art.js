@@ -13,9 +13,9 @@ const breakpointColumnsObj = {
   default: 6,
   1536: 5,
   1280: 4,
-  1024: 4,
-  768: 4,
-  640: 4,
+  1024: 3,
+  768: 2,
+  640: 2,
 };
 
 const ArtPage = () => {
@@ -43,8 +43,9 @@ const ArtPage = () => {
               gatsbyImageData(
                 placeholder: DOMINANT_COLOR
                 formats: [AUTO, WEBP]
-                quality: 70
-                breakpoints: [576, 768, 992, 1200]
+                quality: 50
+                breakpoints: [240, 576, 768, 992, 1200]
+                layout: CONSTRAINED
               )
             }
             relativePath
@@ -162,9 +163,9 @@ const links = [
                 className="w-full my-image-button"
               >
                 <GatsbyImage
-                  image={getImage(node.childImageSharp)}
+                  image={getImage(node)}
                   alt=""
-                  layout="fluid"
+                  layout="constrained"
                 />
                 <p
                   className="text-gray-500"

@@ -1,9 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  Fragment,
-  useRef,
-} from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { motion } from "framer-motion";
 import logo from "/src/images/logo.png";
 import imgSrc4 from "../assets/So Sick of Feeling.webp";
@@ -12,6 +7,8 @@ import imgSrc6 from "../assets/I Picked These Flowers For You.webp";
 import imgSrc7 from "../assets/The Truth Is So Clear.webp";
 import imgThumb from "../images/art/The Color of Her Aura.jpeg";
 import classnames from "classnames";
+import tetralogo from "../images/tetraw.svg";
+import { ReactSVG } from "react-svg";
 import {
   AiFillInstagram,
   AiFillTwitterCircle,
@@ -19,42 +16,48 @@ import {
 } from "react-icons/ai";
 import { MdOutlineFacebook } from "react-icons/md";
 
-const images = [imgSrc4, imgSrc5, imgSrc6, imgSrc7]; // Add more image paths as needed
+const images = [imgSrc4, imgSrc5, imgSrc6, imgSrc7];
 
 const ParallaxImages = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const imageRefs = useRef([]);
-  const intervalRef = useRef();
+  const [loadedImages, setLoadedImages] = useState([images[0]]);
 
   useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000); // Change slide every 5 seconds
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => {
+        const nextImage = (prevImage + 1) % images.length;
+        if (!loadedImages.includes(images[nextImage])) {
+          setLoadedImages([...loadedImages, images[nextImage]]);
+        }
+        return nextImage;
+      });
+    }, 5000);
 
-    return () => clearInterval(intervalRef.current); // Clear the interval on unmount
-  }, []);
+    return () => clearInterval(interval);
+  }, [loadedImages]);
 
   return (
     <Fragment>
-      {images.map((src, index) => (
-        <motion.img
-          key={index}
-          ref={(ref) => (imageRefs.current[index] = ref)}
-          src={src}
-          alt={`Slide ${index}`}
-          className={classnames(
-            "z-10 absolute top-0 left-0 w-full h-full object-cover",
-            {
-              "opacity-100": index === currentImage,
-              "opacity-0": index !== currentImage,
-            }
-          )}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: index === currentImage ? 1 : 0 }}
-          transition={{ duration: 0.5 }}
-        />
-      ))}
-      {/* Rest of your component code */}
+      {loadedImages.map((src, index) => {
+        const isActive = index === currentImage;
+        return (
+          <motion.img
+            key={index}
+            src={src}
+            alt={`Slide ${index}`}
+            className={classnames(
+              "z-10 absolute top-0 left-0 w-full h-full object-cover",
+              {
+                "opacity-100": isActive,
+                "opacity-0": !isActive,
+              }
+            )}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isActive ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+          />
+        );
+      })}
     </Fragment>
   );
 };
@@ -85,15 +88,23 @@ const socialLinks = [
 const IndexPage = () => {
   return (
     <Fragment>
-      <ParallaxImages />
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50">
+      <ParallaxImages /></div>
       <div className=" z-20 absolute top-0 left-0 object-cover w-full h-full flex flex-col justify-center items-center">
-        <img src={logo} alt="Your Logo" className="w-64 h-64 object-contain" />
+         {/* new element */}
+         <ReactSVG
+                aria-label="Tetra Logo"
+                src={tetralogo}
+                type="image/svg+xml"
+                alt="TetraLogo"
+                className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-64 h-50"
+              />
         <h1 className="text-6xl font-bold text-white mt-8">TETRA</h1>
         <div className="text-lg font-semibold text-white text-bold mt-4">
           CREATING THE WORLD OF TOMORROW
         </div>
         <a href="/art">
-          <button class="border border-white text-white font-bold py-2 px-4 mt-8 rounded-lg bg-transparent hover:text-black transition-colors duration-300 hover:bg-white hover:text-neutral-800">
+          <button className="border border-white text-white font-bold py-2 px-4 mt-8 rounded-lg bg-transparent hover:text-black transition-colors duration-300 hover:bg-white hover:text-neutral-800">
             ENTER THE WORLD
           </button>
         </a>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import { useLocation } from "@reach/router";
-import logo from "/src/images/logo.png";
+import logo from "../images/tetraw.svg";
+import { ReactSVG } from "react-svg";
 
 export default function Nav({ menuLinks, activePage }) {
   const location = useLocation();
@@ -34,13 +35,16 @@ export default function Nav({ menuLinks, activePage }) {
           activePage === location.pathname ? "text-white" : "text-gray-600"
         } uppercase bg-transparent w-full z-50`}
       >
-        <div className="flex flex-wrap w-full items-center justify-center mt-6 z-50">
+        <div className="flex flex-wrap w-full items-center justify-center mt-5 z-50">
           {!isLandingPage && (
-            <div className="w-auto logo">
-              <Link to="/">
-                <img src={logo} alt="Logo" width="80" />
-              </Link>
-            </div>
+            <Link to="/">
+            <ReactSVG
+            aria-label="Tetra Logo"
+            src={logo}
+            type="image/svg+xml"
+            alt="TetraLogo"
+            className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-16 h-16"
+          /></Link>
           )}
         </div>
         <ul className="flex">

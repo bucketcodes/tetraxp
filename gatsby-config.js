@@ -49,7 +49,6 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require("postcss-import"),
           require("tailwindcss"),
           require("autoprefixer"),
           require("postcss-focus-visible"),
