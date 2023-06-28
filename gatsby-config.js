@@ -1,38 +1,17 @@
 module.exports = {
-  flags: {
-    PARALLEL_QUERY_RUNNING: true
-  },
+  /*flags: {
+    PARALLEL_QUERY_RUNNING: true,
+  },*/
   siteMetadata: {
     title: `TETRA`,
     siteUrl: `https://www.tetraxp.com`,
     menuLinks: [
-      {
-        name: "ART",
-        link: "/art",
-      },
-      {
-        name: "NFT",
-        link: "/nft",
-        //link: "https://foundation.app/tetra",
-        //external: true,
-      },
-      {
-        name: "MUSIC",
-        link: "/music",
-      },
-      {
-        name: "SHOP",
-        link: "https://shop.tetraxp.com",
-        external: true,
-      },
-      {
-        name: "ABOUT",
-        link: "/about",
-      },
-      {
-        name: "CONTACT",
-        link: "/contact",
-      },
+      { name: "ART", link: "/art" },
+      { name: "NFT", link: "/nft" },
+      { name: "MUSIC", link: "/music" },
+      { name: "SHOP", link: "https://shop.tetraxp.com", external: true },
+      { name: "ABOUT", link: "/about" },
+      { name: "CONTACT", link: "/contact" },
     ],
   },
   plugins: [
@@ -43,6 +22,21 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-LRZB84NKMR", // Google Analytics ID
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true,
+          /*respectDNT: true,*/
+        },
       },
     },
     {
