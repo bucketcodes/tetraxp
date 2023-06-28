@@ -82,8 +82,8 @@ app.post('/contact', async (req, res) => {
 app.listen(PORT, () => {
   console.log("Server is running on Port: " + PORT);
 });
-app.get('/contact', function (req, res, next) {
+/*app.get('/contact', function (req, res, next) {
   console.log("Not a post request")
   res.redirect('/contact/');
   next();
-});
+});*/

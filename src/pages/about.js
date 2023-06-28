@@ -8,7 +8,10 @@ import cv from "../assets/cv.pdf";
 import { motion } from "framer-motion";
 
 import { Stepper, Step, Button, Typography } from "@material-tailwind/react";
-import { AiFillInstagram, AiFillTwitterCircle, AiOutlineCloudDownload
+import {
+  AiFillInstagram,
+  AiFillTwitterCircle,
+  AiOutlineCloudDownload,
 } from "react-icons/ai";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { MdOutlineFacebook } from "react-icons/md";
@@ -29,12 +32,12 @@ const SkillBar = ({ skillName, progress }) => {
 
   return (
     <div className="flex items-center justify-between mb-2">
-      <span className="text-xs font-bold mr-2 b text-neutral-400">
+      <span className="text-s font-bold mr-2 b text-neutral-400">
         {skillName}
       </span>
       <div className="w-3/4 bg-neutral-800 rounded-full">
         <div
-          className="bg-red-500 h-2 rounded-full transition-all duration-500 ease-in-out"
+          className="bg-red-500 h-3 rounded-full transition-all duration-500 ease-in-out"
           style={{ width: `${currentProgress}%` }}
         ></div>
       </div>
@@ -54,17 +57,17 @@ const socialMediaLinks = [
   {
     label: "Instagram",
     href: "https://www.instagram.com/tetraxp",
-    icon: <AiFillInstagram className="w-4 h-4" />,
+    icon: <AiFillInstagram className="w-6 h-6" />,
   },
   {
     label: "Twitter",
     href: "https://twitter.com/tetragocommando",
-    icon: <AiFillTwitterCircle className="w-4 h-4" />,
+    icon: <AiFillTwitterCircle className="w-6 h-6" />,
   },
   {
     label: "Facebook",
     href: "https://www.facebook.com/tetraxp",
-    icon: <MdOutlineFacebook className="w-4 h-4" />,
+    icon: <MdOutlineFacebook className="w-6 h-6" />,
   },
 ];
 
@@ -102,7 +105,7 @@ const AboutPage = () => {
     >
       <div>
         <div>
-          <div className="flex max-w-xs mx-auto mb-10 sm:mb-10 z-5">
+          <div className="flex max-w-sm mx-auto mb-10 sm:mb-10 z-5">
             <Stepper
               activeStep={activeStep}
               isLastStep={(value) => setIsLastStep(value)}
@@ -111,80 +114,81 @@ const AboutPage = () => {
               activeLineClassName="bg-red-500"
             >
               <Step
-                className="h-2 w-2 ring-opacity-0 bg-neutral-500"
+                className="h-2 w-2 ring-opacity-0 bg-neutral-400"
                 activeClassName="bg-red-500"
                 completedClassName="bg-red-500"
                 onClick={() => setActiveStep(0)}
               >
-                <div className="absolute -bottom-[1.5rem] w-max text-center">
+                <div className="absolute top-[1rem] w-max text-center">
                   <Typography
                     variant="h6"
                     color={activeStep === 0 ? "red" : "gray"}
-                    className="text-xs pointer-events-none select-none"
+                    activeClassName="bg-red-500"
+                    className="pointer-events-none select-none"
                   >
                     Bio
                   </Typography>
                 </div>
               </Step>
               <Step
-                className="h-2 w-2 ring-opacity-0 bg-neutral-500"
+                className="h-2 w-2 ring-opacity-0 bg-neutral-400"
                 activeClassName="bg-red-500"
                 completedClassName="bg-red-500"
                 onClick={() => setActiveStep(1)}
               >
-                <div className="absolute -bottom-[1.5rem] w-max text-center">
+                <div className="absolute top-[1rem] w-max text-center">
                   <Typography
                     variant="h6"
                     color={activeStep === 1 ? "red" : "gray"}
-                    className="text-xs pointer-events-none select-none"
+                    className="pointer-events-none select-none"
                   >
                     09 – 12
                   </Typography>
                 </div>
               </Step>
               <Step
-                className="h-2 w-2 ring-opacity-0 bg-neutral-500"
+                className="h-2 w-2 ring-opacity-0 bg-neutral-400"
                 activeClassName="bg-red-500"
                 completedClassName="bg-red-500"
                 onClick={() => setActiveStep(2)}
               >
-                <div className="absolute -bottom-[1.5rem] w-max text-center">
+                <div className="absolute top-[1rem] w-max text-center">
                   <Typography
                     variant="h6"
                     color={activeStep === 2 ? "red" : "gray"}
-                    className="text-xs pointer-events-none select-none"
+                    className="pointer-events-none select-none"
                   >
                     13 – 18
                   </Typography>
                 </div>
               </Step>
               <Step
-                className="h-2 w-2 ring-opacity-0 bg-neutral-500"
+                className="h-2 w-2 ring-opacity-0 bg-neutral-400"
                 activeClassName="bg-red-500"
                 completedClassName="bg-red-500"
                 onClick={() => setActiveStep(3)}
               >
-                <div className="absolute -bottom-[1.5rem] w-max text-center">
+                <div className="absolute top-[1rem] w-max text-center">
                   <Typography
                     variant="h6"
                     color={activeStep === 3 ? "red" : "gray"}
-                    className="text-xs pointer-events-none select-none"
+                    className="pointer-events-none select-none"
                   >
                     19 – 22
                   </Typography>
                 </div>
               </Step>
               <Step
-                className="h-2 w-2 ring-opacity-0 bg-neutral-500"
+                className="h-2 w-2 ring-opacity-0 bg-neutral-400"
                 activeClassName="bg-red-500"
                 completedClassName="bg-red-500"
                 onClick={() => setActiveStep(4)}
               >
-                <div className="absolute -bottom-[1.5rem] w-max text-center">
+                <div className="absolute top-[1rem] w-max text-center">
                   <Typography
                     variant="h6"
                     color={activeStep === 4 ? "red" : "gray"}
-                    className="text-xs pointer-events-none select-none"
+                    className="pointer-events-none select-none"
                   >
                     23 – XX
                   </Typography>
@@ -193,29 +197,29 @@ const AboutPage = () => {
             </Stepper>
           </div>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
-          <Button
-            variant="filled"
-            color="red"
-            onClick={handlePrev}
-            disabled={isFirstStep}
-            className="!fixed top-1/2 left-0 transform md:px-5 px-3 z-50 mx-2"
-            //className="!fixed z-50 inset-x-0 mx-auto max-w-max right-full"
-          >
-            <FaArrowCircleLeft />
-          </Button>
-          <Button
-            variant="filled"
-            color="red"
-            onClick={handleNext}
-            disabled={isLastStep}
-            //className="!fixed z-50  justify-center	"
-            className="!fixed top-1/2 right-0 transform md:px-5 px-3 z-50 mx-2"
-          >
-            <FaArrowCircleRight />
-          </Button>
-          <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+        <Button
+          variant="filled"
+          color="red"
+          onClick={handlePrev}
+          disabled={isFirstStep}
+          className="!fixed top-1/2 left-0 transform md:px-5 px-3 z-50 mx-2"
+          //className="!fixed z-50 inset-x-0 mx-auto max-w-max right-full"
+        >
+          <FaArrowCircleLeft />
+        </Button>
+        <Button
+          variant="filled"
+          color="red"
+          onClick={handleNext}
+          disabled={isLastStep}
+          //className="!fixed z-50  justify-center	"
+          className="!fixed top-1/2 right-0 transform md:px-5 px-3 z-50 mx-2"
+        >
+          <FaArrowCircleRight />
+        </Button>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
+          <div className="grid gap-2">
+          <div className="h-auto w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
             <div className="relative">
               <img
                 className="object-cover w-full h-full rounded-lg transition-all duration-500 ease-in-out pointer-events-none select-none"
@@ -235,7 +239,7 @@ const AboutPage = () => {
                 alt={`Tetra portrait`}
               />
             </div>
-            <h1 className=" mt-2 text-2xl font-bold">
+            <h1 className=" mt-2 text-3xl font-bold text-neutral-300">
               {activeStep === 0
                 ? "TETRA"
                 : activeStep === 1
@@ -248,7 +252,7 @@ const AboutPage = () => {
                 ? "TETRA"
                 : "TETRA"}
             </h1>
-            <p className="text-sm mb-2 text-neutral-600">
+            <p className="text-md mb-2 text-neutral-500">
               {activeStep === 0
                 ? "Multidisciplinary Artist + Engineer"
                 : activeStep === 1
@@ -261,7 +265,7 @@ const AboutPage = () => {
                 ? "Artist"
                 : "Multidisciplinary Artist / Engineer"}
             </p>
-            <div className="flex space-x-3">
+            <div className="flex space-x-5">
               {socialMediaLinks.map((link) => (
                 <a
                   key={link.label}
@@ -269,7 +273,7 @@ const AboutPage = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-600 hover:text-white transition-colors duration-300"
+                  className="text-neutral-500 hover:text-white transition-colors duration-300"
                 >
                   {link.icon}
                 </a>
@@ -287,17 +291,18 @@ const AboutPage = () => {
               ))}
             </div>
             <a
-  href={cv}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="font-bold rounded-lg bg-neutral-800 text-white text-xs py-1 mt-2 mb-1 text-center block hover:bg-neutral-700 transition-colors duration-300"
->
-  <AiOutlineCloudDownload
- className="inline-block w-4 h-4 mr-2" />
-  DOWNLOAD CV
-</a>
+              href={cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold rounded-lg bg-neutral-800 text-white text-s py-1 mt-2 mb-1 text-center block hover:bg-neutral-700 transition-colors duration-300"
+            >
+              <AiOutlineCloudDownload className="inline-block w-6 h-6 mr-2" />
+              DOWNLOAD CV
+            </a>
           </div>
 
+            
+          </div>
           <Suspense fallback={<div></div>}>{renderActiveStep()}</Suspense>
         </div>
       </div>
@@ -310,9 +315,12 @@ export default AboutPage;
 export const Head = () => (
   <>
     <title>TETRA ➕ - About the Artist</title>
-    <meta name="description" content="Discover how Tetra combines Digital Art and AI to create a new form of Renaissance that challenges the boundaries of art and technology." />
+    <meta
+      name="description"
+      content="Discover how Tetra combines Digital Art and AI to create a new form of Renaissance that challenges the boundaries of art and technology."
+    />
     <meta name="keywords" content="TETRA, about, website, art" />
     <meta name="author" content="Tetra, John Perez" />
     <meta name="robots" content="index, follow" />
   </>
-)
+);

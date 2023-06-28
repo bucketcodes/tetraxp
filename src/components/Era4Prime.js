@@ -19,8 +19,8 @@ import { SiTidal, SiGenius } from "react-icons/si";
 const primeEra = () => {
   return (
     <Fragment>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
-        <h1 className=" text-2xl font-bold">PRIME ERA</h1>
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+        <h1 className="text-neutral-300 text-3xl font-bold">PRIME ERA</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <div className="relative">
           <img
@@ -29,11 +29,11 @@ const primeEra = () => {
             alt={`Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           The year 2020 was a transformative one for me, as I faced
           unprecedented challenges and opportunities. I learned how to adapt and
           thrive in a rapidly changing world, while also helping others cope
@@ -43,7 +43,7 @@ const primeEra = () => {
           fulfillment of serving others through my work. I also had to deal with
           my own unexpected situations.
         </p>
-        <p className="text-gray-600 text-xs mb-3">
+        <p className="text-neutral-400 text-md mb-3">
           During that time, I realized that I had to make the best of what I
           had, and not let fear or uncertainty stop me from pursuing my dreams.
           I invested in a laptop that enabled me to do everything I wanted to
@@ -52,7 +52,7 @@ const primeEra = () => {
           as I gained more confidence and recognition for my work.
         </p>
       </div>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -60,12 +60,12 @@ const primeEra = () => {
             alt={`January Recap (First Winter 2023)`}
           />
         </div>
-        <h1 className=" mt-2 text-2xl font-bold">TETRA RENAISSANCE</h1>
-        <p className="text-sm mb-2 text-neutral-600">
+        <h1 className="text-neutral-300 text-3xl font-bold mt-2">TETRA RENAISSANCE</h1>
+        <p className="text-md mb-2 text-neutral-500">
           January Recap (First Winter 2023)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           I had fallen into a creative slumber after settling down in North
           Carolina. I was struggling to make ends meet with random gigs and
           commissions. Then, in June of 2022, something clicked in me. I
@@ -73,7 +73,7 @@ const primeEra = () => {
           but that was also a chance to start fresh. I committed to making a
           piece every day and never turning back.
         </p>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           In the past nine months, I have produced more than 200 pieces of art,
           making this the most prolific year of my career. I have achieved the
           dream of being a full-time artist, but this is just the start.
@@ -85,11 +85,11 @@ const primeEra = () => {
             alt={`July - August Art Highlights (Summer 2022)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           July - August Art Highlights (Summer 2022)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           My work is a reflection of my inner world, where I explore the
           contrasts and complexities of human emotions. I feel the solitude of
           the soul, the intensity of the passions, and the resolve of the will.
@@ -100,7 +100,7 @@ const primeEra = () => {
           the story I tell through every piece I create.
         </p>
       </div>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -108,23 +108,23 @@ const primeEra = () => {
             alt={`I'll Protect You in Every Life (Sold, 2022)`}
           />
         </div>
-        <h1 className=" mt-2 text-2xl font-bold">NFTS</h1>
-        <p className="text-sm mb-2 text-neutral-600">
+        <h1 className="text-neutral-300 text-3xl font-bold mt-2">NFTS</h1>
+        <p className="text-md mb-2 text-neutral-500">
           I'll Protect You in Every Life (Sold, 2022)
         </p>
-        <div className="flex space-x-3">
+        <div className="flex space-x-4">
           <a
             aria-label="Foundation"
             href="https://foundation.app/@TETRA"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <FaGlobe className="w-4 h-4" />
+            <FaGlobe className="w-6 h-6" />
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           End of 2020, Audius had airdropped quite a few tokens to active
           members of the community. Considering that Ah! Hermes was still active
           digitally at the time, all of us had transitioned to the platform. I
@@ -141,11 +141,11 @@ const primeEra = () => {
             alt={`After Death, the Gods Rise to Create the World Again (Sold, 2022)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           After Death, the Gods Rise to Create the World Again (Sold, 2022)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           This space has opened up a new world of possibilities for me as an
           artist. I have been able to sell my creations for more than I ever
           dreamed of. The digital economy is no longer a fantasy, but a reality.
@@ -164,11 +164,11 @@ const primeEra = () => {
           />
         </div>
 
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           Cheers Club, 1 ETH (Sold 2021)
         </p>
       </div>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -176,48 +176,48 @@ const primeEra = () => {
             alt={`Ultramarine, Released July 16, 2021`}
           />
         </div>
-        <h1 className=" mt-2 text-2xl font-bold">ULTRAMARINE</h1>
-        <p className="text-sm mb-2 text-neutral-600">Released July 16, 2021</p>
-        <div className="flex space-x-3">
+        <h1 className="text-neutral-300 text-3xl font-bold mt-2">ULTRAMARINE</h1>
+        <p className="text-md mb-2 text-neutral-500">Released July 16, 2021</p>
+        <div className="flex space-x-4">
           <a
             aria-label="Ultramarine Spotify"
             href="https://open.spotify.com/album/1qBikR7DOkbWVUYz1WrPwB?si=-mIn9peETrqam0eFisvngg"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <FaSpotify className="w-4 h-4" />
+            <FaSpotify className="w-6 h-6" />
           </a>
           <a
             aria-label="Ultramarine Apple"
             href="https://music.apple.com/us/album/ultramarine/1576790571"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <FaApple className="w-4 h-4" />
+            <FaApple className="w-6 h-6" />
           </a>
           <a
             aria-label="Ultramarine Tidal"
             href="https://tidal.com/browse/album/191193416"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <SiTidal className="w-4 h-4" />
+            <SiTidal className="w-6 h-6" />
           </a>
           <a
             aria-label="Ultramarine Genius"
             href="https://genius.com/albums/Tetra/Ultramarine"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <SiGenius className="w-4 h-4" />
+            <SiGenius className="w-6 h-6" />
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           𝐔𝐋𝐓𝐑𝐀𝐌𝐀𝐑𝐈𝐍𝐄 (əltrəməˈrēn / pisces / waterbaby) is a collaborative
           project that features Tetra as the recording artist & engineer and
           Joven as the lead producer & engineer. It was started in the Bronx,
@@ -228,7 +228,7 @@ const primeEra = () => {
           pushing the boundaries of traditional rap music.
         </p>
       </div>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -236,50 +236,50 @@ const primeEra = () => {
             alt={`GARNET, Released December 25, 2020`}
           />
         </div>
-        <h1 className=" mt-2 text-2xl font-bold">GARNET</h1>
-        <p className="text-sm mb-2 text-neutral-600">
+        <h1 className="text-neutral-300 text-3xl font-bold mt-2">GARNET</h1>
+        <p className="text-md mb-2 text-neutral-500">
           Released December 25, 2020
         </p>
-        <div className="flex space-x-3">
+        <div className="flex space-x-4">
         <a
             aria-label="GARNET Spotify"
             href="https://open.spotify.com/album/5xpBNPrFQH6BbiBrjSiYKA?si=Y8oaO8GHTiCpcKWLhADf9w"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <FaSpotify className="w-4 h-4" />
+            <FaSpotify className="w-6 h-6" />
           </a>
           <a
             aria-label="GARNET Apple"
             href="https://music.apple.com/us/album/garnet/1546326755"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <FaApple className="w-4 h-4" />
+            <FaApple className="w-6 h-6" />
           </a>
           <a
             aria-label="GARNET Tidal"
             href="https://tidal.com/browse/album/167347270"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <SiTidal className="w-4 h-4" />
+            <SiTidal className="w-6 h-6" />
           </a>
           <a
             aria-label="GARNET Genius"
             href="https://genius.com/albums/Tetra/Garnet"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-600 hover:text-white transition-colors duration-300"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <SiGenius className="w-4 h-4" />
+            <SiGenius className="w-6 h-6" />
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           Garnet was the first official album that I released on all music
           streaming platforms, introducing myself as a solo artist and an
           engineer to the world. It was a reflection of all the lessons and
@@ -290,7 +290,7 @@ const primeEra = () => {
           Tetra HQ.
         </p>
       </div>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -298,11 +298,11 @@ const primeEra = () => {
             alt={`Lake Wallenpaupack, Pennsylvania (First Winter 2021)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           Lake Wallenpaupack, Pennsylvania (First Winter 2021)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           The beginning of 2021 was another surreal experience. I had invested
           heavily on Gamestop stock back in December. My options were for
           January 15th, they were worthless just before a week of expiration.
@@ -310,7 +310,7 @@ const primeEra = () => {
           the only time I 30X'd an investment in so little time, I bet that if
           it paid off we'd take a trip, so we went to Lake Wallenpaupack.
         </p>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           Throughout the year of 2021, I traveled across Chicago and Charlotte,
           knocking on doors and pitching products as a salesperson. It was a
           grueling and exhausting job, but it also sparked my interest in a new
@@ -320,7 +320,7 @@ const primeEra = () => {
           decision: I quit my sales job and took some time off to figure out my
           situation with creating art.
         </p>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           I didn’t produce any new pieces during that period, but I felt that
           the break was necessary for my well-being and creativity. Now, I am a
           thriving full-time artist, living my dream and sharing my vision with
@@ -330,7 +330,7 @@ const primeEra = () => {
           me.
         </p>
       </div>
-      <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -338,11 +338,11 @@ const primeEra = () => {
             alt={`Garnet Shoot 2, NY (Shot by Yeeevs) (Last Winter 2020)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           Garnet Shoot, NY (Shot by Yeeevs) (Last Winter 2020)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           As soon as I returned with my whip, we cruised up to this dope park
           that Yeeevs had put me on. We snapped some fire pics for the debut
           album I was about to drop and they turned out legendary.
@@ -354,11 +354,11 @@ const primeEra = () => {
             alt={`Timeless, Collection 3 (Spring 2020)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           Timeless, Collection 3 (Spring 2020)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-gray-600 text-xs mb-6">
+        <p className="text-neutral-400 text-md mb-6">
           Even though the pandemic ravaged the world in the same month as our
           launch of Collection 3 for Timeless, we still succeeded in selling it.
           We overcame the challenges of lockdowns, supply chain disruptions and
@@ -371,7 +371,7 @@ const primeEra = () => {
             alt={`Tetra Post-Performance, Brooklyn (First Winter 2020)`}
           />
         </div>
-        <p className="text-xs mt-2 mb-2 text-neutral-600">
+        <p className="text-md mt-2 mb-2 text-neutral-500">
           Tetra Post-Performance, Brooklyn (First Winter 2020)
         </p>
       </div>
