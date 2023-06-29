@@ -1,5 +1,5 @@
 import * as React from "react";
-import profilePic from "../assets/portrait.jpg";
+import profilePic from "../assets/elmo.jpg";
 import era1 from "../assets/kidportrait.jpg";
 import era2 from "../assets/10-15.jpg";
 import era3 from "../assets/16-19.jpg";
@@ -37,7 +37,7 @@ const SkillBar = ({ skillName, progress }) => {
       </span>
       <div className="w-3/4 bg-neutral-800 rounded-full">
         <div
-          className="bg-red-500 h-3 rounded-full transition-all duration-500 ease-in-out"
+          className="bg-red-500 h-2 rounded-full transition-all duration-500 ease-in-out"
           style={{ width: `${currentProgress}%` }}
         ></div>
       </div>
@@ -218,7 +218,7 @@ const AboutPage = () => {
         >
           <FaArrowCircleRight />
         </Button>
-        <div className="columns-1 lg:columns-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
+        <div className="columns-1 lg:columns-2 gap-2 justify-items-center mx-auto px-4 max-w-max mb-8">
 
           <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
             <div className="relative">
@@ -242,7 +242,7 @@ const AboutPage = () => {
             </div>
             <h1 className=" mt-2 text-3xl font-bold text-neutral-300">
               {activeStep === 0
-                ? "TETRA"
+                ? "JOHN"
                 : activeStep === 1
                 ? "DEADLOCKED"
                 : activeStep === 2
@@ -255,7 +255,7 @@ const AboutPage = () => {
             </h1>
             <p className="text-sm mb-2 text-neutral-500">
               {activeStep === 0
-                ? "Multidisciplinary Artist + Engineer"
+                ? "Multidisciplinary Artist + Engineer + Lover of Food"
                 : activeStep === 1
                 ? "Future Veterinarian"
                 : activeStep === 2

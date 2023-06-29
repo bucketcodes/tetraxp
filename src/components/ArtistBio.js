@@ -33,6 +33,8 @@ const artistBio = () => {
             <a href="https://github.com/bucketcodes/tetraxp">Click here</a>
           </b>{" "} for the Github repo.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <a className="mt-2 text-3xl font-bold text-neutral-300">TIMELINE (AGE, ERA)</a>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <Timeline>

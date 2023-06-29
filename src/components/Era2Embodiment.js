@@ -1,5 +1,6 @@
 import * as React from "react";
 import ironman from "../assets/ironman.png";
+import frieza from "../assets/frieza.webp";
 import sonic from "../assets/sonic.png";
 import end from "../assets/end.png";
 import cloudcrux from "../assets/cloudcrux.jpg";
@@ -90,12 +91,12 @@ const embodimentEra = () => {
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
-            src={ironman}
-            alt={`Ironman Signature (Spring 2013)`}
+            src={frieza}
+            alt={`Frieza Signature (Summer 2013)`}
           />
         </div>
         <p className="text-sm mt-2 mb-2 text-neutral-500">
-          Ironman Signature (Spring 2013)
+        Frieza Signature (Summer 2013)
         </p>
       </div>
       <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
@@ -139,6 +140,18 @@ const embodimentEra = () => {
           them. We still keep in touch to this day. This was my creative outlet
           during school, where I could express myself and have fun, apart from
           my later server ownership responsibilities.
+        </p>
+      </div>
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={ironman}
+            alt={`Ironman Signature (Spring 2013)`}
+          />
+        </div>
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+          Ironman Signature (Spring 2013)
         </p>
       </div>
     </Fragment>

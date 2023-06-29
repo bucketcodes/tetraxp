@@ -2,6 +2,7 @@ import * as React from "react";
 import era1art from "../assets/06-09.jpg";
 import rc from "../assets/rc.webp";
 import vivi from "../assets/vivi.webp";
+import llama from "../assets/llama.webp";
 import desktop1 from "../assets/desktop1.webp";
 import desktop2 from "../assets/desktop2.webp";
 import { Fragment } from "react";
@@ -34,20 +35,15 @@ const originEra = () => {
         </p>
       </div>
       <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
-        <p className="text-neutral-400 text-sm mb-6">
-          I had a knack for exploring the inner workings of Windows and
-          installing custom themes, rather than using actual design software. So
-          it didn’t take me long to figure out what appealed to my eyes more.
-        </p>
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
-            src={desktop2}
-            alt={`Windows XP Custom Theme (2007)`}
+            src={llama}
+            alt={`Windows XP Custom Theme (Winter 2006)`}
           />
         </div>
         <p className="text-sm mt-2 mb-2 text-neutral-500">
-          Windows XP Custom Theme (2007)
+          Long Live the era of Llama Memes! (Winter 2006) [No, this isn't me.]
         </p>
       </div>
 

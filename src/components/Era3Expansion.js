@@ -3,9 +3,11 @@ import timeless2 from "../assets/timeless2.jpg";
 import timelesspics from "../assets/timelesspics.jpg";
 import ahhermes from "../assets/ahhermes.webp";
 import yeeevs from "../assets/yeeevs.jpg";
+import youngadult from "../assets/youngadult.webp";
 import me16 from "../assets/me16.jpg";
 import johnperform from "../assets/johnperform.webp";
 import jaybw from "../assets/jaybw.webp";
+import kami from "../assets/kami.webp";
 import beat from "../assets/beat.webp";
 import art2018 from "../assets/art2018.jpg";
 import sunny from "../assets/sunny.jpg";
@@ -23,13 +25,7 @@ const expansionEra = () => {
         <h1 className="text-neutral-300 text-3xl font-bold">EXPANSION ERA</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
-          The world was against me. It was a perilous time full of betrayals,
-          deaths, and changes of values. I could hardly smile, chaos was
-          everywhere. I started to hate school and the people around me, but
-          nothing drove me more to create. Creating was my only escape. I had
-          left my role as Server Owner at Cloudcrux, and began to focus on other
-          things. I was more passionate about making music, networking for
-          artwork, photography, and shooting videos than ever before.
+        I overcame many obstacles and hardships in my life. It was a period of transition, discovery, and personal development. I witnessed many friends come and go, family moving on, and the shifting of values in the world. But I also discovered a passion and a purpose in creating. Creating was my sanctuary and my expression. I decided to quit my role as Server Owner at Cloudcrux, and explore new avenues and possibilities. I devoted myself to music, art, photography, and video making, honing my skills and talents like never before.
         </p>
         <div className="relative">
           <img
@@ -96,6 +92,8 @@ const expansionEra = () => {
           platform features. It felt like we were exploring a new frontier after
           Soundcloud.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -187,6 +185,18 @@ const expansionEra = () => {
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={jaybw}
+            alt={`Jay with Timeless Stickers, Charlotte (Summer 2019)`}
+          />
+        </div>
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+          Jay with Timeless Stickers, Charlotte (Summer 2019)
+        </p>
+      </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={timelesspics}
             alt={`Timeless Shoots, Charlotte (Summer 2019)`}
           />
@@ -195,16 +205,34 @@ const expansionEra = () => {
           Timeless Shoots, Charlotte (Summer 2019)
         </p>
         </div>
-        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
-            src={jaybw}
-            alt={`Jay with Timeless Stickers, Charlotte (Summer 2019)`}
+            src={youngadult}
+            alt={`Yeeevs - Young Adult (Fall 2018)`}
           />
         </div>
         <p className="text-sm mt-2 mb-2 text-neutral-500">
-          Jay with Timeless Stickers, Charlotte (Summer 2019)
+          Yeeevs - Young Adult (Fall 2018) [Cover Shot 2016, Yeeevs HQ]
+        </p>
+        <div className="flex space-x-5">
+          <a
+            aria-label="Yeeevs - Young Adult"
+            href="https://audius.co/yeeevs/album/young-adult-3750"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
+          >
+            <HiMusicNote className="w-6 h-6" />
+          </a>
+        </div>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <p className="text-neutral-400 text-sm mb-6">
+        Young Adult is the result of a collaboration between Yeeevs and me, dating back to 2018. We remastered it for Audius in 2019, showcasing our best skills and talents. This project reflects our years of hard work and dedication in rapping and engineering. The cover art is from the same day I snapped the selfie below.
+        </p>
+        <p className="text-neutral-400 text-sm mb-6">
+        Aside from engineering this project, I am also featured on two tracks, Medievil which was produced by MXXXY, and Run It Up! produced by the legend, Whiskey Ramone.
         </p>
       </div>
       <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
@@ -234,6 +262,52 @@ const expansionEra = () => {
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={sunny}
+            alt={`Holland Izz - Sunny Tapes Vol 1 (Summer 2018)`}
+          />
+        </div>
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+          Holland Izz - Sunny Tapes Vol 1 (Summer 2018)
+        </p>
+        <div className="flex space-x-5">
+          <a
+            aria-label="Holland Izz - Sunny Tapes Vol 1"
+            href="https://soundcloud.com/hollandizz/sets/sunny-tapes-vol-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
+          >
+            <HiMusicNote className="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={kami}
+            alt={`Kamifonzo - Crash Nebula (Spring 2018)`}
+          />
+        </div>
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+        Kamifonzo - Crash Nebula (Spring 2018)
+        </p>
+        <div className="flex space-x-5">
+          <a
+            aria-label="Kamifonzo - Crash Nebula"
+            href="https://soundcloud.com/kamifonzo/kami-fonzo-crash-nebula-prod-vision4k"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-500 hover:text-white transition-colors duration-300"
+          >
+            <HiMusicNote className="w-6 h-6" />
+          </a>
+        </div>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
             src={art2018}
             alt={`Cover Artwork Compilation (Summer 2018)`}
           />
@@ -244,22 +318,9 @@ const expansionEra = () => {
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
           Throughout this year, I focused on creating cover artwork for various
-          clients while also exploring other artistic mediums. This was a way to
-          cope with my emotions and to divert my attention from my troubles. I
-          found it difficult to make art for myself, to express my own vision
-          and feelings if it wasn't disguised through art I had done for others.
-        </p>
-      </div>
-      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
-        <div className="relative">
-          <img
-            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
-            src={sunny}
-            alt={`Holland Izz - Sunny Tapes Vol 1 (Summer 2018)`}
-          />
-        </div>
-        <p className="text-sm mt-2 mb-2 text-neutral-500">
-          Holland Izz - Sunny Tapes Vol 1 (Summer 2018)
+          clients while also exploring other artistic mediums. I was still finding
+          who I was at the time. I simply found it difficult to make art for 
+          myself, to express my own vision and feelings if it wasn't disguised through art I had done for others, but I was learning.
         </p>
       </div>
       <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">

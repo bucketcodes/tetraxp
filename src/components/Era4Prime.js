@@ -9,6 +9,7 @@ import ultramarine from "../assets/ultramarine.webp";
 import julyaugart from "../assets/julyaugart.webp";
 import death from "../assets/death.webp";
 import winter2020shoot from "../assets/winter2020shoot.webp";
+import burn from "../assets/burn.webp";
 import pa2021 from "../assets/pa2021.webp";
 import john2020shoot from "../assets/john2020shoot.webp";
 import { Fragment } from "react";
@@ -34,14 +35,7 @@ const primeEra = () => {
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
-          The year 2020 was a transformative one for me, as I faced
-          unprecedented challenges and opportunities. I learned how to adapt and
-          thrive in a rapidly changing world, while also helping others cope
-          with the crisis. I worked hard to provide essential support and
-          resources to people struggling with the pandemic, whether it was new
-          hardware, benefits, or emotional assistance. I discovered the joy and
-          fulfillment of serving others through my work. I also had to deal with
-          my own unexpected situations.
+        The year 2020 was a remarkable one for me, as I embraced new challenges and opportunities. I learned how to be resilient and innovative in a dynamic world. I worked diligently to provide vital support and resources to people through art and odd jobs, whether it was cutting-edge hardware, generous benefits, or compassionate assistance. I experienced the joy and satisfaction of serving others through my work. I also had overcome my own unforeseen circumstances.
         </p>
         <p className="text-neutral-400 text-sm mb-3">
           During that time, I realized that I had to make the best of what I
@@ -66,12 +60,7 @@ const primeEra = () => {
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
-          I had fallen into a creative slumber after settling down in North
-          Carolina. I was struggling to make ends meet with random gigs and
-          commissions. Then, in June of 2022, something clicked in me. I
-          realized what I wanted to do. NFTs were not as hot as they used to be,
-          but that was also a chance to start fresh. I committed to making a
-          piece every day and never turning back.
+        I ignited a new flame of creativity after relocating to North Carolina. I was grinding to make a living with diverse gigs and commissions. Then, in June of 2022, something awakened me. I realized what I wanted to do. NFTs were not as trendy as they used to be, but that was also a chance to start anew. I committed myself to making a piece every day and never quitting.
         </p>
         <p className="text-neutral-400 text-sm mb-6">
           In the past nine months, I have produced more than 200 pieces of art,
@@ -97,8 +86,7 @@ const primeEra = () => {
           the soul, the intensity of the passions, and the resolve of the will.
           I embrace a motto: “At war with entropy”, which captures the essence
           of our existence. We defy the inevitable decay and dissolution, we
-          strive to create and preserve, even though we know that death awaits
-          us all. The war with entropy is a hopeless one, but we fight. This is
+          strive to create and persevere, we fight. This is
           the story I tell through every piece I create.
         </p>
       </div>
@@ -137,6 +125,19 @@ const primeEra = () => {
           Rarible.
         </p>
         </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={burn}
+            alt={`They Let Me Burn (Created Fall 2022)`}
+          />
+        </div>
+
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+          They Let Me Burn (Created Fall 2022)
+        </p>
+      </div>
         <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
@@ -309,14 +310,6 @@ const primeEra = () => {
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
-          The beginning of 2021 was another surreal experience. I had invested
-          heavily on Gamestop stock back in December. My options were for
-          January 15th, they were worthless just before a week of expiration.
-          Three days prior to expiration, that's when everything changed. It was
-          the only time I 30X'd an investment in so little time, I bet that if
-          it paid off we'd take a trip, so we went to Lake Wallenpaupack.
-        </p>
-        <p className="text-neutral-400 text-sm mb-6">
           Throughout the year of 2021, I traveled across Chicago and Charlotte,
           knocking on doors and pitching products as a salesperson. It was a
           grueling and exhausting job, but it also sparked my interest in a new
@@ -353,6 +346,8 @@ const primeEra = () => {
           that Yeeevs had put me on. We snapped some fire pics for the debut
           album I was about to drop and they turned out legendary.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -365,11 +360,11 @@ const primeEra = () => {
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
-          Even though the pandemic ravaged the world in the same month as our
-          launch of Collection 3 for Timeless, we still succeeded in selling it.
-          We overcame the challenges of lockdowns, supply chain disruptions and
-          customer fears with our innovative and resilient strategies.
+        We celebrated the successful launch of Collection 3 for Timeless, despite the global crisis that occurred in the same month. We rose above the difficulties of lockdowns, supply chain disruptions in creative ways, making the best out of the situation.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
