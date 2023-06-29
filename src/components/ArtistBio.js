@@ -13,10 +13,10 @@ import {
 const artistBio = () => {
   return (
     <Fragment>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <a className=" text-3xl text-neutral-300 font-bold">BIO</a>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           Tetra is a multi-disciplinary artist and engineer from New York who is
           known for their unique blend of mediums and styles. Born and raised in
           the city, Tetra’s work often reflects the chaos and energy of their
@@ -26,7 +26,7 @@ const artistBio = () => {
         </p>
         <a className=" text-3xl text-neutral-300 font-bold">WEBSITE INFO</a>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
         This website is the work of Tetra, utilizing Gatsby, React JS, and Tailwind CSS for creation.
         {" "}
           <b>
@@ -48,7 +48,7 @@ const artistBio = () => {
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-2">
-              <Typography className="my-2 text-md text-neutral-400">
+              <Typography className="my-2 text-sm text-neutral-400">
                 The genesis of life, the span of gestation. The dawn of
                 creation, the roots of fervor. Historical snapshots, the nascent
                 web.
@@ -67,7 +67,7 @@ const artistBio = () => {
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-2">
-              <Typography className="my-2 text-md text-neutral-400">
+              <Typography className="my-2 text-sm text-neutral-400">
                 Existence, artistry for the world, a test of talent, a phase of
                 learning. Blossoming into a maker, sowing the seeds.
               </Typography>
@@ -85,7 +85,7 @@ const artistBio = () => {
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-2">
-              <Typography className="my-2 text-md text-neutral-400">
+              <Typography className="my-2 text-sm text-neutral-400">
                 Cosmos-creating, earning from imagination, meeting of brutal
                 truths, where a pastime turned into a refuge. A change in
                 perspective.
@@ -104,7 +104,7 @@ const artistBio = () => {
               </Typography>
             </TimelineHeader>
             <TimelineBody>
-              <Typography className="my-2 text-md text-neutral-400">
+              <Typography className="my-2 text-sm text-neutral-400">
                 Final achievement, intense self-consciousness and insights. The
                 voyage has grown solitary, but visions have never been nearer to
                 grasp. A genuine peak, this is for eternity.

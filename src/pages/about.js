@@ -32,7 +32,7 @@ const SkillBar = ({ skillName, progress }) => {
 
   return (
     <div className="flex items-center justify-between mb-2">
-      <span className="text-s font-bold mr-2 b text-neutral-400">
+      <span className="text-sm font-bold mr-2 b text-neutral-400">
         {skillName}
       </span>
       <div className="w-3/4 bg-neutral-800 rounded-full">
@@ -105,13 +105,14 @@ const AboutPage = () => {
     >
       <div>
         <div>
-          <div className="flex max-w-sm mx-auto mb-10 sm:mb-10 z-5">
+          <div className="flex max-w-xs mx-auto mb-10 z-5">
             <Stepper
               activeStep={activeStep}
               isLastStep={(value) => setIsLastStep(value)}
               isFirstStep={(value) => setIsFirstStep(value)}
               lineClassName="bg-neutral-800"
               activeLineClassName="bg-red-500"
+              className="z-0"
             >
               <Step
                 className="h-2 w-2 ring-opacity-0 bg-neutral-400"
@@ -217,9 +218,9 @@ const AboutPage = () => {
         >
           <FaArrowCircleRight />
         </Button>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
-          <div className="grid gap-2">
-          <div className="h-auto w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+        <div className="columns-1 lg:columns-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
+
+          <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
             <div className="relative">
               <img
                 className="object-cover w-full h-full rounded-lg transition-all duration-500 ease-in-out pointer-events-none select-none"
@@ -252,7 +253,7 @@ const AboutPage = () => {
                 ? "TETRA"
                 : "TETRA"}
             </h1>
-            <p className="text-md mb-2 text-neutral-500">
+            <p className="text-sm mb-2 text-neutral-500">
               {activeStep === 0
                 ? "Multidisciplinary Artist + Engineer"
                 : activeStep === 1
@@ -294,18 +295,17 @@ const AboutPage = () => {
               href={cv}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold rounded-lg bg-neutral-800 text-white text-s py-1 mt-2 mb-1 text-center block hover:bg-neutral-700 transition-colors duration-300"
+              className="font-bold rounded-lg bg-neutral-800 text-white text-sm py-1 mt-2 mb-1 text-center block hover:bg-red-500 transition-colors duration-300"
             >
               <AiOutlineCloudDownload className="inline-block w-6 h-6 mr-2" />
               DOWNLOAD CV
             </a>
           </div>
 
-            
-          </div>
           <Suspense fallback={<div></div>}>{renderActiveStep()}</Suspense>
+          </div>
+
         </div>
-      </div>
     </motion.div>
   );
 };

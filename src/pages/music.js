@@ -193,7 +193,7 @@ const MusicPage = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col items-center">
-        <div className="flex space-x-7 mb-6">
+        <div className="flex space-x-7 mb-5">
           {socialLinks.map((link) => (
             <a
               key={link.label}
@@ -203,7 +203,7 @@ const MusicPage = () => {
               rel="noopener noreferrer"
               className="text-neutral-500 hover:text-white transition-colors duration-300"
             >
-              <link.icon className="w-5 h-5" />
+              <link.icon className="w-7 h-7" />
             </a>
           ))}
         </div>

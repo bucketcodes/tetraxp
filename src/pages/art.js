@@ -10,7 +10,7 @@ import { ReactSVG } from "react-svg";
 
 
 const breakpointColumnsObj = {
-  default: 6,
+  default: 5,
   1536: 5,
   1280: 4,
   1024: 3,

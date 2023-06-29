@@ -10,10 +10,10 @@ import { FaGlobe } from "react-icons/fa";
 const embodimentEra = () => {
   return (
     <Fragment>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900 transition-opacity duration-500">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <h1 className="text-neutral-300 text-3xl font-bold">EMBODIMENT ERA</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           I had a lot of roles to play when I was of this age. It didn't seem
           like work, but I was taking on a lot of responsibilities. I had to
           balance school, gaming community, recording studio, graphic design,
@@ -21,7 +21,7 @@ const embodimentEra = () => {
           Photoshop skills through community projects and making cover art for
           friends and locals.
         </p>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           This was where I adapted to the tools that I'd use later on. I was
           discovering who I was and having fun. There were so many distractions,
           so many things to learn, every day was a new adventure.{" "}
@@ -39,11 +39,11 @@ const embodimentEra = () => {
             alt={`Tetra HQ recording with Yeeevs, Bronx (Fall 2014)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Tetra HQ recording with Yeeevs, Bronx (Fall 2014)
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -52,7 +52,7 @@ const embodimentEra = () => {
           />
         </div>
         <h1 className="mt-2 text-neutral-300 text-3xl font-bold">CLOUDCRUX NETWORK</h1>
-        <p className="text-md mb-2 text-neutral-500">Founded 2013</p>
+        <p className="text-sm mb-2 text-neutral-500">Founded 2013</p>
         <div className="flex space-x-3">
           <a
             aria-label="CloudCrux Network"
@@ -61,18 +61,18 @@ const embodimentEra = () => {
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-white transition-colors duration-300"
           >
-            <FaGlobe className="w-4 h-4" />
+            <FaGlobe className="w-6 h-6" />
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           After leaving my community, Hydrocity Gaming, I witnessed the
           emergence of some sub-communities that branched out and connected with
           each other. Some examples were Disorderly Gaming, Realms of Denryden,
           and many more. I founded CloudCrux with my friend Mikey, and it became
           a vital part of our community-building experience.
         </p>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           From him, I learned the ins and outs of Linux Debian, Server
           Management, and back-end work. It was a whole new world for me, but I
           loved it. We ran different custom modpack servers, depending on
@@ -85,6 +85,8 @@ const embodimentEra = () => {
           best to fix and prevent them with extra plugins or custom mods. It was
           a tough challenge, but we were dedicated to making a great experience.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -92,11 +94,11 @@ const embodimentEra = () => {
             alt={`Ironman Signature (Spring 2013)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Ironman Signature (Spring 2013)
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -106,7 +108,7 @@ const embodimentEra = () => {
         </div>
         <h1 className="text-neutral-300 text-3xl font-bold">HYDROCITY GAMING</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           I started a thread on Hydrocity Gaming, a gaming community that I was
           part of, to showcase my signature designs. A signature is a small
           image that appears at the bottom of a forum post. I offered to make
@@ -116,6 +118,8 @@ const embodimentEra = () => {
           signatures for every active member who asked for one, using Photoshop
           to create unique and appealing graphics.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -123,12 +127,12 @@ const embodimentEra = () => {
             alt={`TheMrTaco Ender Dragon Signature (Spring 2013)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           TheMrTaco Ender Dragon Signature (Spring 2013)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
 
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           This project helped me refine my Photoshop skills and learn new
           techniques. It also helped me connect with many people from different
           backgrounds and interests, and form lasting friendships with some of

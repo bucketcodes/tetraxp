@@ -14,7 +14,7 @@ const PlayerControls = ({
   onNextClick,
 }) => {
   return (
-    <div className="text-neutral-600 text-2xl ">
+    <div className="text-neutral-600 text-3xl space-x-4">
       <button
         type="button"
         className="prev hover:text-white transition-colors duration-200 w-10 h-10"

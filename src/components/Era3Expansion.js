@@ -19,10 +19,10 @@ import { MdOutlineFacebook } from "react-icons/md";
 const expansionEra = () => {
   return (
     <Fragment>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <h1 className="text-neutral-300 text-3xl font-bold">EXPANSION ERA</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           The world was against me. It was a perilous time full of betrayals,
           deaths, and changes of values. I could hardly smile, chaos was
           everywhere. I started to hate school and the people around me, but
@@ -38,11 +38,11 @@ const expansionEra = () => {
             alt={`Van Cortlandt Park, Bronx (Shot by Yeeevs) (Fall 2016)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Van Cortlandt Park, Bronx (Shot by Yeeevs) (Fall 2016)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           I created my first well-crafted song of my own in 2017. It was called
           GTA over a BlackCivic beat. 2018 was a tough but transformative year
           for me; I filmed my first music video that summer, flew to LA by
@@ -52,7 +52,7 @@ const expansionEra = () => {
           creating. I was creating a catalyst.
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -61,7 +61,7 @@ const expansionEra = () => {
           />
         </div>
         <h1 className="mt-2 text-neutral-300 text-3xl font-bold">AH! HERMES</h1>
-        <p className="text-md mb-2 text-neutral-500">
+        <p className="text-sm mb-2 text-neutral-500">
           International Artist Collective (Winter 2019)
         </p>
         <div className="flex space-x-5">
@@ -85,7 +85,7 @@ const expansionEra = () => {
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           Ah! Hermes was created in 2012, but 2019 was when we turned it into a
           collective of local and international music artists and producers. We
           were a versatile group with different skills and talents. I was an
@@ -103,11 +103,12 @@ const expansionEra = () => {
             alt={`Joven Freestyle, Tetra HQ (Winter 2019)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Joven Freestyle, Tetra HQ (Winter 2019)
         </p>
-        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <p className="text-neutral-400 text-sm mb-6">
           In late 2019, I stepped on the stage for the first time in my life. It
           was one of the most exhilarating and unforgettable experiences I ever
           had. The event was a small one, organized by a friend of a friend. I
@@ -124,11 +125,11 @@ const expansionEra = () => {
             alt={`Tetra Performance, Brooklyn (Shot by Joven) (Fall 2019)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Tetra Performance, Brooklyn (Shot by Joven) (Fall 2019)
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -137,7 +138,7 @@ const expansionEra = () => {
           />
         </div>
         <h1 className="mt-2 text-neutral-300 text-3xl font-bold">TIMELESS</h1>
-        <p className="text-md mb-2 text-neutral-500">
+        <p className="text-sm mb-2 text-neutral-500">
           New York Clothing Brand (Summer 2019)
         </p>
         <div className="flex space-x-5">
@@ -170,7 +171,7 @@ const expansionEra = () => {
           </a>
         </div>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           Timeless was created in 2019. It was one of the most ambitious
           projects started with me and my friends like brothers, Jay and Eddie.
           It had been a dream long before it became a reality. Take Initiative,
@@ -181,6 +182,8 @@ const expansionEra = () => {
           the photos with my Canon. It was an unprecedented detour that truly
           paid off.
         </p>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -188,10 +191,11 @@ const expansionEra = () => {
             alt={`Timeless Shoots, Charlotte (Summer 2019)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Timeless Shoots, Charlotte (Summer 2019)
         </p>
-        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -199,33 +203,11 @@ const expansionEra = () => {
             alt={`Jay with Timeless Stickers, Charlotte (Summer 2019)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Jay with Timeless Stickers, Charlotte (Summer 2019)
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
-        <div className="relative">
-          <img
-            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
-            src={selfie2016}
-            alt={`Portrait at Yeeevs HQ, Bronx (Fall 2016)`}
-          />
-        </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
-          Portrait at Yeeevs HQ, Bronx (Fall 2016)
-        </p>
-        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
-          This photo captures a moment when I was indulging in my passion for
-          DIY fashion. I had a knack for transforming plain band t-shirts into
-          unique and edgy pieces by bleaching and distressing them. I would
-          resell the shirts on online platforms like Grailed and Mercari. At the
-          time, I went over to Yeeev's crib to get some help to shoot the
-          shirts, although many shots were left unused, there are still gem
-          portraits from this day archived.
-        </p>
-      </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -233,11 +215,11 @@ const expansionEra = () => {
             alt={`Kyle Driving & Beatmaking, California (Summer 2018)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Kyle Driving & Beatmaking, California (Summer 2018)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           The year 2019 marked the zenith of this epoch. After completing my
           education, I accelerated my ambitions. After the recharge I felt in
           going to LA the first time in 2018, I returned to the LA for the
@@ -248,7 +230,7 @@ const expansionEra = () => {
           the previous years.
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -256,11 +238,11 @@ const expansionEra = () => {
             alt={`Cover Artwork Compilation (Summer 2018)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Cover Artwork Compilation (Summer 2018)
         </p>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           Throughout this year, I focused on creating cover artwork for various
           clients while also exploring other artistic mediums. This was a way to
           cope with my emotions and to divert my attention from my troubles. I
@@ -268,7 +250,7 @@ const expansionEra = () => {
           and feelings if it wasn't disguised through art I had done for others.
         </p>
       </div>
-      <div className="w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
@@ -276,8 +258,30 @@ const expansionEra = () => {
             alt={`Holland Izz - Sunny Tapes Vol 1 (Summer 2018)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Holland Izz - Sunny Tapes Vol 1 (Summer 2018)
+        </p>
+      </div>
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={selfie2016}
+            alt={`Portrait at Yeeevs HQ, Bronx (Fall 2016)`}
+          />
+        </div>
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+          Portrait at Yeeevs HQ, Bronx (Fall 2016)
+        </p>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <p className="text-neutral-400 text-sm mb-6">
+          This photo captures a moment when I was indulging in my passion for
+          DIY fashion. I had a knack for transforming plain band t-shirts into
+          unique and edgy pieces by bleaching and distressing them. I would
+          resell the shirts on online platforms like Grailed and Mercari. At the
+          time, I went over to Yeeev's crib to get some help to shoot the
+          shirts, although many shots were left unused, there are still gem
+          portraits from this day archived.
         </p>
       </div>
     </Fragment>

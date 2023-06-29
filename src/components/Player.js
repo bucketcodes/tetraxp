@@ -302,9 +302,9 @@ const Player = ({ tracks }) => {
   return (
     <Fragment>
       {/* The JSX code for rendering the player component */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8">
         <audio ref={audioRef} /> {/* Audio player element */}
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900">
+        <div className=" h-auto w-full max-w-lg p-2 rounded-lg shadow-lg bg-neutral-900">
           <div className="relative">
             <img
               className="object-cover w-full h-full rounded-lg"
@@ -314,7 +314,7 @@ const Player = ({ tracks }) => {
           </div>
           <div className="p-2">
             <h2 className="text-sm font-bold text-neutral-400">{title}</h2>
-            <h3 className="text-xs text-neutral-600">{artist}</h3>
+            <h3 className="text-sm text-neutral-600">{artist}</h3>
             <div className="relative mt-2">
               <input
                 type="range"
@@ -351,10 +351,10 @@ const Player = ({ tracks }) => {
                 </div>
               </div>
               <div className="flex items-center justify-between mt-2">
-                <div className="text-xs text-neutral-500">
+                <div className="text-sm text-neutral-500">
                   {formatTime(trackProgress)}
                 </div>
-                <div className="text-xs text-neutral-500">
+                <div className="text-sm text-neutral-500">
                   {formatTime(duration)}
                 </div>
               </div>
@@ -362,7 +362,7 @@ const Player = ({ tracks }) => {
             </div>
           </div>
         </div>
-        <div className="w-full sm:max-w-sm max-w-sm p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[33.75rem]">
+        <div className=" h-auto w-full max-w-lg p-2 rounded-lg shadow-lg bg-neutral-900 overflow-y-scroll h-[42.1rem]">
           <div className="tracklist-body">
             {tracks.map((track, index) => (
               <div
@@ -394,12 +394,12 @@ const Player = ({ tracks }) => {
                         {/* Add this div with "ml-auto" class */}
                         {renderSocialLinks(track.links)}
                       </div>
-                      <div className="text-xs text-neutral-600">
+                      <div className="text-sm text-neutral-600">
                         {track.length}
                       </div>
                     </div>
                     <div className="flex items-center">
-                      <div className="text-xs text-neutral-600">
+                      <div className="text-sm text-neutral-600">
                         {track.artist}
                       </div>
                     </div>

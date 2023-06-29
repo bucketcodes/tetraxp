@@ -9,10 +9,10 @@ import { Fragment } from "react";
 const originEra = () => {
   return (
     <Fragment>
-      <div className="h-auto w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <h1 className="text-neutral-300 text-3xl font-bold">ORIGIN ERA</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           I spent a lot of time exploring creativeness in weird ways, imagining
           different Zoo Tycoon 2 Parks, dreaming of becoming a Veterinarian,
           working with various animals and drawing the ones I liked in old
@@ -29,15 +29,32 @@ const originEra = () => {
             alt={`Old Signature Tags`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Signature Tags (2006)
         </p>
       </div>
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <p className="text-neutral-400 text-sm mb-6">
+          I had a knack for exploring the inner workings of Windows and
+          installing custom themes, rather than using actual design software. So
+          it didn’t take me long to figure out what appealed to my eyes more.
+        </p>
+        <div className="relative">
+          <img
+            className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
+            src={desktop2}
+            alt={`Windows XP Custom Theme (2007)`}
+          />
+        </div>
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
+          Windows XP Custom Theme (2007)
+        </p>
+      </div>
 
-      <div className=" h-auto w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <h1 className="text-neutral-300 text-3xl font-bold">LEGENDS IN TIME</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           My childhood was marked by a thrilling adventure in the virtual world
           of Ratchet: Deadlocked on PlayStation 2, a 2005 action platformer game
           by Insomniac. I joined a clan called the Crazy Killers, who later
@@ -55,11 +72,12 @@ const originEra = () => {
             alt={`Ratchet and Clank Signature (2006)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           First Signature Ever Created (2006)
         </p>
-        <hr className=" h-auto w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <p className="text-neutral-400 text-sm mb-6">
           I realized that I had reached the limit of my artistic abilities at
           that time. The only thing I could do was draw in my notebook with a
           pencil. I decided to ask for help from other members on the forums who
@@ -73,14 +91,14 @@ const originEra = () => {
             alt={`Vivi Signature (2006)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Vivi Signature (2006)
         </p>
       </div>
-      <div className="h-auto w-full max-w-xl p-2 rounded-lg shadow-lg bg-neutral-900">
+      <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <h1 className="text-neutral-300 text-3xl font-bold">WINDOWS XP</h1>
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        <p className="text-neutral-400 text-sm mb-6">
           I tried to create my own aesthetic on the computer screen, but it was
           a hopeless endeavor. I scattered my icons all over the desktop,
           thinking that it looked cool. But I had to share the desktop with my
@@ -95,11 +113,12 @@ const originEra = () => {
             alt={`Desktop Screenshot 2007`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           First Desktop Screenshot (2007)
         </p>
-        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
-        <p className="text-neutral-400 text-md mb-6">
+        </div>
+        <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <p className="text-neutral-400 text-sm mb-6">
           I had a knack for exploring the inner workings of Windows and
           installing custom themes, rather than using actual design software. So
           it didn’t take me long to figure out what appealed to my eyes more.
@@ -111,7 +130,7 @@ const originEra = () => {
             alt={`Windows XP Custom Theme (2007)`}
           />
         </div>
-        <p className="text-md mt-2 mb-2 text-neutral-500">
+        <p className="text-sm mt-2 mb-2 text-neutral-500">
           Windows XP Custom Theme (2007)
         </p>
       </div>
