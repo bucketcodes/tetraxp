@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Masonry from "react-masonry-css";
 import prand from "pure-rand";
@@ -80,23 +80,15 @@ const links = [
     >
       <div className="flex flex-col items-center">
         <div className="flex space-x-7 mb-6">
-          {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.target}
-              rel={link.rel}
-              className=""
-            >
+            <Link to="/collabs/">
               <ReactSVG
-                aria-label={link.label}
-                src={link.icon}
+                aria-label="Collaborations"
+                src={collabs}
                 type="image/svg+xml"
-                alt={link.label}
-                className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-14 h-5"
+                alt="Collaborations"
+                className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-7 h-7"
               />
-            </a>
-          ))}
+            </Link>
         </div>
         </div>
       <div>

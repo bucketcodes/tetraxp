@@ -6,6 +6,7 @@ import { ReactSVG } from "react-svg";
 import catalyst from "../assets/Catalyst.webp";
 import reaperwolf from "../assets/Wolfgang.webp";
 import purgatory from "../assets/Purgatory.webp";
+import { Link } from "gatsby";
 
 const breakpointColumnsObj = {
   default: 6,
@@ -36,15 +37,15 @@ const CollabsPage = () => {
               className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-14 h-5"
             />
   </a>*/}
-          <a key={collabs} href="/collabs">
-            <ReactSVG
-              aria-label="Collaborations"
-              src={collabs}
-              type="image/svg+xml"
-              alt="Collaborations"
-              className="fill-white transition-colors duration-300 mr-4 last:mr-0 w-14 h-5"
-            />
-          </a>
+            <Link to="/collabs/">
+              <ReactSVG
+                aria-label="Collaborations"
+                src={collabs}
+                type="image/svg+xml"
+                alt="Collaborations"
+                className="fill-white hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-7 h-7"
+              />
+            </Link>
         </div>
       </div>
       <div>
