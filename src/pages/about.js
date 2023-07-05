@@ -125,7 +125,7 @@ const AboutPage = () => {
                     variant="h6"
                     color={activeStep === 0 ? "red" : "gray"}
                     activeClassName="bg-red-500"
-                    className="pointer-events-none select-none"
+                    className="pointer-events-none select-none text-xs"
                   >
                     Bio
                   </Typography>
@@ -141,9 +141,9 @@ const AboutPage = () => {
                   <Typography
                     variant="h6"
                     color={activeStep === 1 ? "red" : "gray"}
-                    className="pointer-events-none select-none"
+                    className="pointer-events-none select-none text-xs"
                   >
-                    09 – 12
+                    08
                   </Typography>
                 </div>
               </Step>
@@ -153,13 +153,13 @@ const AboutPage = () => {
                 completedClassName="bg-red-500"
                 onClick={() => setActiveStep(2)}
               >
-                <div className="absolute top-[1rem] w-max text-center">
+                <div className="absolute top-[1rem] w-max text-center text-xs">
                   <Typography
                     variant="h6"
                     color={activeStep === 2 ? "red" : "gray"}
-                    className="pointer-events-none select-none"
+                    className="pointer-events-none select-none text-xs"
                   >
-                    13 – 18
+                    13
                   </Typography>
                 </div>
               </Step>
@@ -173,9 +173,9 @@ const AboutPage = () => {
                   <Typography
                     variant="h6"
                     color={activeStep === 3 ? "red" : "gray"}
-                    className="pointer-events-none select-none"
+                    className="pointer-events-none select-none text-xs"
                   >
-                    19 – 22
+                    19
                   </Typography>
                 </div>
               </Step>
@@ -189,9 +189,9 @@ const AboutPage = () => {
                   <Typography
                     variant="h6"
                     color={activeStep === 4 ? "red" : "gray"}
-                    className="pointer-events-none select-none"
+                    className="pointer-events-none select-none text-xs"
                   >
-                    23 – XX
+                    23+
                   </Typography>
                 </div>
               </Step>
