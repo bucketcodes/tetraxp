@@ -9,6 +9,7 @@ import imgThumb from "../images/art/The Color of Her Aura.jpeg";
 import classnames from "classnames";
 import tetralogo from "../images/tetraw.svg";
 import { ReactSVG } from "react-svg";
+import threads from "../assets/threads.svg";
 import {
   AiFillInstagram,
   AiFillTwitterCircle,
@@ -62,11 +63,28 @@ const ParallaxImages = () => {
   );
 };
 
+const ThreadsIcon = ({ className }) => {
+  return (
+    <ReactSVG
+      aria-label="Threads Icon"
+      src={threads}
+      type="image/svg+xml"
+      alt="Threads Icon"
+      className={`fill-white hover:fill-white transition-colors duration-300 mx-4 !w-[1.5rem] content-evenly !h-7`}
+    />
+  );
+};
+
 const socialLinks = [
   {
     label: "Instagram",
     href: "https://www.instagram.com/tetraxp",
     icon: AiFillInstagram,
+  },
+  {
+    label: "Threads",
+    href: "https://www.threads.net/@tetraxp",
+    icon: ThreadsIcon,
   },
   {
     label: "Twitter",
@@ -90,7 +108,7 @@ const IndexPage = () => {
     <Fragment>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50">
       <ParallaxImages /></div>
-      <div className=" z-20 absolute top-0 left-0 object-cover w-full h-full flex flex-col justify-center items-center">
+      <div className="z-20 absolute top-0 left-0 object-cover w-full h-full flex flex-col justify-center items-center">
          {/* new element */}
          <ReactSVG
                 aria-label="Tetra Logo"
@@ -108,7 +126,7 @@ const IndexPage = () => {
             ENTER THE WORLD
           </button>
         </a>
-        <div className="absolute bottom-12">
+        <div className="absolute bottom-12 flex flex-row items-center">
         {socialLinks.map((link) => (
           <a
             key={link.label}

@@ -6,6 +6,8 @@ import {
 } from "react-icons/ai";
 import { MdOutlineFacebook } from "react-icons/md";
 import { motion } from "framer-motion";
+import threads from "../assets/threads.svg";
+import { ReactSVG } from "react-svg";
 
 const ContactPage = () => {
   const [name, setName] = React.useState("");
@@ -74,11 +76,28 @@ const ContactPage = () => {
     };
   }, []);
 
+  const ThreadsIcon = ({ className }) => {
+    return (
+      <ReactSVG
+        aria-label="Threads Icon"
+        src={threads}
+        type="image/svg+xml"
+        alt="Threads Icon"
+        className={`fill-neutral-500 hover:fill-white transition-colors duration-300 !w-[1.42rem] !h-6`}
+      />
+    );
+  };
+
   const socialLinks = [
     {
       label: "Instagram",
       href: "https://www.instagram.com/tetraxp",
       icon: AiFillInstagram,
+    },
+    {
+      label: "Threads",
+      href: "https://www.threads.net/@tetraxp",
+      icon: ThreadsIcon,
     },
     {
       label: "Twitter",
@@ -94,7 +113,7 @@ const ContactPage = () => {
       label: "Behance",
       href: "https://www.behance.net/tetraxp",
       icon: AiFillBehanceCircle,
-    },
+    }
   ];
 
   return (
@@ -105,7 +124,7 @@ const ContactPage = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col items-center">
-        <div className="flex space-x-7 mb-6">
+        <div className="flex space-x-7 mb-6 items-center">
           {socialLinks.map((link) => (
             <a
               key={link.label}

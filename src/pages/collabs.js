@@ -9,6 +9,7 @@ import purgatory from "../assets/Purgatory.webp";
 import bornchosen from "../images/art/BORN CHOSEN.jpeg";
 import goodriddance from "../images/art/Good Riddance.jpeg";
 import ineverymotion from "../images/art/In Every Motion.jpeg";
+import combobreaker from "../images/art/COMBOBREAKER.jpeg";
 import { Link } from "gatsby";
 
 const breakpointColumnsObj = {
@@ -46,12 +47,24 @@ const images = [
     src: goodriddance,
   },
   {
-    alt: "Good Riddance (2023)",
+    alt: "In Every (2023)",
     src: ineverymotion,
   },
   // add more images here
 ];
 const CollabsPage = () => {
+  const [modalOpen, setModalOpen] = React.useState(false);
+
+  const openModal = (image) => {
+    setModalOpen(true);
+    setModalImage(image);
+  };
+  
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+  
+  const [modalImage, setModalImage] = React.useState(null);
 
   return (
     <motion.div
@@ -62,7 +75,7 @@ const CollabsPage = () => {
     >
       <div className="flex flex-col items-center">
         <div className="flex space-x-7 mb-6">
-         {/* <a key={works} href="/works">
+          {/* <a key={works} href="/works">
             <ReactSVG
               aria-label="Commissions"
               src={works}
@@ -71,20 +84,22 @@ const CollabsPage = () => {
               className="fill-neutral-600 hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-14 h-5"
             />
   </a>*/}
-            <Link to="/collabs/">
-              <ReactSVG
-                aria-label="Collaborations"
-                src={collabs}
-                type="image/svg+xml"
-                alt="Collaborations"
-                className="fill-white hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-7 h-7"
-              />
-            </Link>
+          <Link to="/collabs/">
+            <ReactSVG
+              aria-label="Collaborations"
+              src={collabs}
+              type="image/svg+xml"
+              alt="Collaborations"
+              className="fill-white hover:fill-white transition-colors duration-300 mr-4 last:mr-0 w-7 h-7"
+            />
+          </Link>
         </div>
       </div>
+      
       <div>
+    
 
-      <Masonry
+<Masonry
   breakpointCols={breakpointColumnsObj}
   className="flex justify-center gap-1"
 >
@@ -96,8 +111,31 @@ const CollabsPage = () => {
         rel="noopener noreferrer"
         className="hover:brightness-125 duration-300 h-auto max-w-full"
       >
-        <img src={image.src} alt={image.alt} />
+        <img
+          src={image.src}
+          alt={image.alt}
+          onClick={image.link? undefined : () => openModal(image)}
+        />
       </a>
+      {modalOpen && (
+          <div
+          className="z-20 modal-container top-0 left-0 z-50 w-full bg-black backdrop-blur-sm bg-opacity-75 flex justify-center items-center"
+          onClick={closeModal}
+          onKeyDown={(e) => {
+            if (e.key === "Escape") {
+              closeModal();
+            }
+          }}
+          tabIndex={0}
+          role="button"
+          aria-label="Close Modal"
+        >
+            <img src={modalImage.src} alt={modalImage.alt} />
+            <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={closeModal}>
+              Close
+            </button>
+          </div>
+      )}
     </div>
   ))}
 </Masonry>
@@ -111,10 +149,12 @@ export default CollabsPage;
 export const Head = () => (
   <>
     <title>TETRA ➕ - Collaborations</title>
-    <meta name="description" content="Previous collaborations on projects and artworks that emerged from the synergy of brilliant minds and creative souls, some pieces may be available for purchase." />
+    <meta
+      name="description"
+      content="Previous collaborations on projects and artworks that emerged from the synergy of brilliant minds and creative souls, some pieces may be available for purchase."
+    />
     <meta name="keywords" content="TETRA, collaborations, website, art" />
     <meta name="author" content="Tetra, John Perez" />
     <meta name="robots" content="index, follow" />
   </>
-)
-
+);

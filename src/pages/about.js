@@ -6,6 +6,8 @@ import era3 from "../assets/16-19.jpg";
 import era4 from "../assets/20-xx.jpg";
 import cv from "../assets/cv.pdf";
 import { motion } from "framer-motion";
+import threads from "../assets/threads.svg";
+import { ReactSVG } from "react-svg";
 
 import { Stepper, Step, Button, Typography } from "@material-tailwind/react";
 import {
@@ -53,11 +55,28 @@ const skills = [
   { name: "Wisdom", progress: [85, 12, 33, 55, 85] },
 ];
 
+const ThreadsIcon = ({ className }) => {
+  return (
+    <ReactSVG
+      aria-label="Threads Icon"
+      src={threads}
+      type="image/svg+xml"
+      alt="Threads Icon"
+      className={`fill-neutral-500 hover:fill-white transition-colors duration-300 !w-[1rem] !h-5`}
+    />
+  );
+};
+
 const socialMediaLinks = [
   {
     label: "Instagram",
     href: "https://www.instagram.com/tetraxp",
     icon: <AiFillInstagram className="w-6 h-6" />,
+  },
+  {
+    label: "Threads",
+    href: "https://www.threads.net/@tetraxp",
+    icon: <ThreadsIcon className="w-6 h-6" />,
   },
   {
     label: "Twitter",
@@ -266,7 +285,7 @@ const AboutPage = () => {
                 ? "Artist"
                 : "Multidisciplinary Artist / Engineer"}
             </p>
-            <div className="flex space-x-5">
+            <div className="flex space-x-5 items-center">
               {socialMediaLinks.map((link) => (
                 <a
                   key={link.label}
