@@ -62,7 +62,7 @@ const ThreadsIcon = ({ className }) => {
       src={threads}
       type="image/svg+xml"
       alt="Threads Icon"
-      className={`fill-neutral-500 hover:fill-white transition-colors duration-300 !w-[1rem] !h-5`}
+      className={`fill-neutral-500 hover:fill-white transition-colors duration-300 !w-[1.07rem] !h-5`}
     />
   );
 };
