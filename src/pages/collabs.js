@@ -9,7 +9,6 @@ import purgatory from "../assets/Purgatory.webp";
 import bornchosen from "../images/art/BORN CHOSEN.jpeg";
 import goodriddance from "../images/art/Good Riddance.jpeg";
 import ineverymotion from "../images/art/In Every Motion.jpeg";
-import combobreaker from "../images/art/COMBOBREAKER.jpeg";
 import { Link } from "gatsby";
 
 const breakpointColumnsObj = {
@@ -47,7 +46,7 @@ const images = [
     src: goodriddance,
   },
   {
-    alt: "In Every (2023)",
+    alt: "In Every Motion (2023)",
     src: ineverymotion,
   },
   // add more images here
