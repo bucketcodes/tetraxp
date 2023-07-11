@@ -192,7 +192,10 @@ const expansionEra = () => {
             projects started with me and my friends like brothers, Jay and
             Eddie. It had been a dream long before it became a reality. Take
             Initiative, Model Excellence, Live Efficient, Start Something. That
-            was our motto. We wanted to brand ourselves in a way that reflected
+            was our motto. 
+          </p>
+          <p className="text-neutral-400 text-sm mb-6">
+             We wanted to brand ourselves in a way that reflected
             the authentic spirit of some young, hungry, New York natives. We
             learned how to screenprint from scratch, sold out every collection.
             I took most of the photos with my Canon. It was an unprecedented
