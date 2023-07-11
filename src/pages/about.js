@@ -237,7 +237,7 @@ const AboutPage = () => {
         >
           <FaArrowCircleRight />
         </Button>
-        <div className="columns-1 lg:columns-2 gap-2 justify-items-center mx-auto px-4 max-w-max mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-2 justify-items-center mx-auto px-4 max-w-max mb-8">
 
           <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
             <div className="relative">
