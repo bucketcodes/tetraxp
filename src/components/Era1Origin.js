@@ -5,6 +5,7 @@ import vivi from "../assets/vivi.webp";
 import llama from "../assets/llama.webp";
 import desktop1 from "../assets/desktop1.webp";
 import desktop2 from "../assets/desktop2.webp";
+import zt2 from "../assets/pic2.jpg";
 import { Fragment } from "react";
 
 const originEra = () => {
@@ -126,27 +127,40 @@ const originEra = () => {
         </div>
       </div>
       <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
+        <h1 className="text-neutral-300 text-3xl font-bold">ZOO TYCOON 2</h1>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
-          I had a knack for exploring the inner workings of Windows and
-          installing custom themes, rather than using actual design software. So
-          it didn’t take me long to figure out what appealed to my eyes more.
+          One of my favorite pastimes was playing Zoo Tycoon 2 on my computer,
+          where I could create and manage my own virtual zoo. I would spend
+          hours reading the zoopedia, which provided information and trivia
+          about different species of animals. I would also install various mods
+          to expand my zoo with exotic and rare animals that were not included
+          in the original game or its expansions.
         </p>
         <div className="relative">
           <img
             className="object-cover w-full h-full rounded-lg transition-opacity duration-500"
-            src={desktop2}
-            alt={`Windows XP Custom Theme (2007)`}
+            src={zt2}
+            alt={`First 5-Star zoo in Zoo Tycoon 2 (2007)`}
           />
         </div>
         <p className="text-sm mt-2 mb-2 text-neutral-500">
-          Windows XP Custom Theme (2007)
+          First 5-Star zoo in Zoo Tycoon 2 (2007)
         </p>
       </div>
       <div className="break-inside-avoid h-auto w-full max-w-lg p-2 rounded-lg bg-neutral-900 mb-2">
         <p className="text-neutral-400 text-sm mb-6">
-          I had a knack for exploring the inner workings of Windows and
-          installing custom themes, rather than using actual design software. So
-          it didn’t take me long to figure out what appealed to my eyes more.
+          I was always curious about how Windows worked and how I could
+          customize its appearance. I enjoyed installing custom themes that
+          changed the look and feel of the operating system, rather than using
+          actual design software.
+        </p>
+        <p className="text-neutral-400 text-sm mb-6">
+          I had a keen eye for aesthetics and I knew what I liked. Installing
+          Windows XP themes was a time-consuming process, but I didn’t mind. I
+          had a strong sense of order and perfectionism that extended from real
+          life to the digital world. I wanted to create a clean and elegant
+          design that matched my vision.
         </p>
         <div className="relative">
           <img

@@ -32,14 +32,15 @@ const artistBio = () => {
         <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
         <p className="text-neutral-400 text-sm mb-6">
           Young lombax, a precursor, keyblade wielder, transcendant of Sony
-          consoles, devourer of infinite foods. I go by Tetra, I am a
+          consoles, devourer of infinite foods. I go by Tetra, a
           multi-disciplinary artist and engineer from New York. I love to
-          experiment with different mediums and styles, exploring entropy, creating works that
-          capture the inherent chaos and energy of the universe around us. The necessary balance and
-          inveitability of things, acceptance of the idea that there is no
-          underlying positives or negatives, it just is.
+          experiment with different mediums and styles, exploring entropy,
+          creating works that capture the inherent chaos and energy of the
+          universe around us. It stems from the constant search for knowledge,
+          and the rabbit hole of technology living in the peak age of
+          information.
         </p>
-        <p className="text-neutral-400 text-sm mb-6 italic">
+        <p className="text-neutral-400 text-sm mb-1 italic">
           "The future is fluid. Each act, each decision, and each development
           creates new possibilities and eliminates others. The future is ours to
           direct." <a className="not-italic font-bold">- Jacque Fresco</a>
@@ -99,6 +100,18 @@ const artistBio = () => {
         </div>
         <p className="text-sm mt-2 mb-2 text-neutral-500">
           Gamecube at Yeeevs' Crib (NY, ????)
+        </p>
+        <hr className="w-full h-px mx-auto border-0 rounded mt-2 mb-4 bg-neutral-800"></hr>
+        <p className="text-neutral-400 text-sm mb-6 italic">
+          "I know the keyblade didn't choose me, and I don't care. I'm proud to
+          be a small part of something bigger - the people it did choose. My
+          friends. They are my power."{" "}
+          <a className="not-italic font-bold">- Sora (Kingdom Hearts DDP)</a>
+        </p>
+        <p className="text-neutral-400 text-sm mb-1 italic">
+          "Why you care about small things? World very simple place. World only
+          have two things: Things you can eat and things you no can eat."{" "}
+          <a className="not-italic font-bold">- Quina (Final Fantasy IX)</a>
         </p>
       </div>
       <div className="grid">
