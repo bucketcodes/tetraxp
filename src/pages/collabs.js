@@ -147,7 +147,7 @@ export default CollabsPage;
 
 export const Head = () => (
   <>
-    <title>TETRA ➕ - Collaborations</title>
+    <title>TETRA - Collaborations</title>
     <meta
       name="description"
       content="Previous collaborations on projects and artworks that emerged from the synergy of brilliant minds and creative souls, some pieces may be available for purchase."

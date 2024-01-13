@@ -163,12 +163,17 @@ const MusicPage = () => {
       },
     },
     {
-      title: "Lost Soul 2.1 [Unreleased]",
-      artist: "Tetra (Prod. OXVX)",
+      title: "Lost Soul",
+      artist: "Tetra + 8TH (Prod. OXVX)",
       audioSrc: lostsoul,
       image: lostsoulcover,
       color: "#5f9fff",
-      links: {},
+      links: {
+        spotify:
+          "https://open.spotify.com/track/3yz6a9IJHUvW4wlNQkNaqc?si=5b683490763a4b0c",
+        apple:
+          "https://music.apple.com/us/album/lost-soul-feat-8th/1711564877?i=1711564897",
+      },
     },
     {
       title: "Breathe",

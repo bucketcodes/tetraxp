@@ -192,7 +192,7 @@ export default ArtPage;
 
 export const Head = () => (
   <>
-    <title>TETRA ➕ - Personal Art Portfolio</title>
+    <title>TETRA - Personal Art Portfolio</title>
     <meta name="description" content="Creations of Tetra, a marvel that reveals the extremities of emotion. Hundreds of compositions from 2023 crafted in mixed media, digitally refined and enhanced." />
     <meta name="keywords" content="TETRA, portfolio, graphics design, art" />
     <meta name="author" content="Tetra, John Perez" />

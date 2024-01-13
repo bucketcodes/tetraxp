@@ -232,7 +232,7 @@ export default ContactPage;
 
 export const Head = () => (
   <>
-    <title>TETRA ➕ - Contact Me / Inquiries</title>
+    <title>TETRA - Contact Me / Inquiries</title>
     <meta name="description" content="Feel free to connect for any insights, desires, inquiries, or ideas involving art, life, or collaborations. Feedback and suggestions are always welcome." />
     <meta name="keywords" content="TETRA, contact, about, art" />
     <meta name="author" content="Tetra, John Perez" />

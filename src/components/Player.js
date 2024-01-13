@@ -302,7 +302,7 @@ const Player = ({ tracks }) => {
   return (
     <Fragment>
       {/* The JSX code for rendering the player component */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8 h-[42rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center mx-auto px-4 md:max-w-max mb-8 lg:h-[42rem] h-full">
         <audio ref={audioRef} /> {/* Audio player element */}
         <div className=" h-auto w-full max-w-lg p-2 rounded-lg shadow-lg bg-neutral-900">
           <div className="relative">
