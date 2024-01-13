@@ -310,7 +310,7 @@ const AboutPage = () => {
                 />
               ))}
             </div>
-            <a
+{/*             <a
               href={cv}
               target="_blank"
               rel="noopener noreferrer"
@@ -318,7 +318,7 @@ const AboutPage = () => {
             >
               <AiOutlineCloudDownload className="inline-block w-6 h-6 mr-2" />
               DOWNLOAD CV
-            </a>
+            </a> */}
           </div>
 
           <Suspense fallback={<div></div>}>{renderActiveStep()}</Suspense>
